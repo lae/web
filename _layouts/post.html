@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1 class="content-header">{{ page.title }}</h1>
+<div class="post">
+  <p>{{ page.date | date: "%d %B %Y - %I:%M %p" }}</p>
+
+  {{ content }}
+
+  <div style="overflow: auto;">{% if page.previous.url %}
+    <div style="display: inline;">&laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a></div>
+  {% endif %}{% if page.next.url %}
+    <div style="float: right;"><a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;</div>
+  {% endif %}</div>
+</div>

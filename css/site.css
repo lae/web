@@ -1,0 +1,61 @@
+body {
+	background: #3f3f3f;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+}
+a {
+	color: #1f9f1f;
+}
+header {
+	width: 80%;
+	margin: 1em auto 0;
+	background: #ffefef;
+	border-top: 4px solid #2f2faf;
+	text-align: justify;
+}
+nav {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+ul#links {
+	display: table-row;
+}
+ul#links li {
+	display: table-cell;
+	border-right: 1px solid black;
+	width: 25%;
+}
+ul#links li.last {
+	border-right: none;
+}
+#links li a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 0.1em;
+}
+#links li a:hover {
+	color: white;
+	background: #1f1f7f;
+}
+#content {
+	width: 80%;
+	margin: 1em auto;
+	background: #ffefef url("/images/totoro.png") no-repeat right bottom;
+	border-top: 4px solid #2faf2f;
+}
+.content-header {
+	background: #4fcf4f;
+	color: white;
+	width: 100%;
+	font-weight: strong;
+	margin: 0;
+	padding: 0.1em 0;
+	font-size: 1.2em;
+	text-indent: 2em;
+}
+#content > div {
+	padding: 0.5em;
+}

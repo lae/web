@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h1 class="content-header">{{ page.title }}</h1>
+<div>
+{{ content }}
+<br />
+{% if page.source %}<p>Source: <a href="{{ page.source }}">{{ page.source }}</a></p>{% endif %}
+{% if page.updated %}<p><em>last updated on {{ page.updated }}</em></p>{% endif %}
+</div>

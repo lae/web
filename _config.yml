@@ -1,0 +1,22 @@
+safe:        false
+auto:        false
+server:      true
+server_port: 4000
+name:        成実Musee
+title:       Musee - nia.teppel.in
+baseurl:     /
+url:         http://nia.teppel.in
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+future:      true
+lsi:         false
+pygments:    false
+markdown:    rdiscount
+permalink:   pretty
+paginate:    1
+
+rdiscount:
+  extensions: []
