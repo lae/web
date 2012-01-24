@@ -15,4 +15,7 @@ push this out) both for my reference and for others who might have trouble.
 There doesn't really seem to be a lot of documentation with setting up a Jekyll 
 site on the internet yet, so hopefully this will come in handy.
 
+Update: Just pushed an initial commit for [this site's source at Github][].
+
 [Jekyll]: https://github.com/mojombo/jekyll
+[this site's source at GitHub]: https://github.com/liliff/web
