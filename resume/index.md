@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+updated: 2012-01-11
+source: https://github.com/liliff/resume
+---
 # Musee Ullah
 
 <milkteafuzz@gmail.com>  
