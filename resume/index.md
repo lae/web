@@ -1,18 +1,13 @@
----
-layout: page
-title: Resume
-updated: 2012-01-11
-source: https://github.com/liliff/resume
----
 # Musee Ullah
 
-<icelandisbeingcolouredbywrens@gmail.com>  
+<milkteafuzz@gmail.com>  
+<http://nia.teppel.in>  
 Austin, TX  
 +14086869736  
 
 ## Overview
 
-I am a 20 year old systems administrator and server firefighter with an aspiration of becoming a part of the DevOps movement.
+I am a 20 year old systems administrator and server firefighter aspiring to become a developer. I learn very quickly in action and am not afraid to take on new ventures. I enjoy what I do and hope to someday create and maintain world changing applications.
 
 ## Work Experience
 
@@ -22,11 +17,11 @@ I am a 20 year old systems administrator and server firefighter with an aspirati
 
 Part of a large team of administrators, we resolve thousands of issues per day, as a popular web host, across thousands of shared servers, virtual private servers and dedicated servers. These range from common database issues, backups and restorations, and reboot triage to web server/database tuning, major software upgrades and custom installations, filing bug reports and more.
 
-*Highlight*: I was employee of the month my 5th month into the position, November. 
+*Highlight*: I was employee of the month for November 2011 (5th month at the job/out of ~120 admins).
 
 #### Systems Monitoring - December 2011 to present
 
-As one unit of a small team of monitors (3-4 usually), we proactively monitor the entire farm for issues before they become major. Issues I handle range from CPU abusers, low disk space, and hard drive errors to Denial of Service attacks/flooding, disaster recovery, and individual site performance reviews.
+As one unit of a small team of monitors (3-4 usually), we proactively monitor the entire farm for issues before they become major. Issues I handle range from CPU abusers, low disk space, and hard drive errors to Denial of Service attacks/flooding, disaster recovery, and individual site performance reviews. Occasionally I do get to make public announcements on our [network status forums][].
 
 ## Volunteer Experience
 
@@ -65,7 +60,11 @@ Other areas of working knowledge fall in: (X)HTML, CSS, PHP, bash scripting, SQL
 
 ## Projects
 
-### [Knights of Reason][] - March 2008 to March 2011
+### [Project Himari][] - January 2011 (on hold)
+
+This is a project I'm working on (in Ruby) as a way to simply maintain a shared hosting environment suitable for Rails applications. Currently on hold as I do more research and learning.
+
+### [Knights of Reason][] - March 2008 and ongoing
 
 I assisted with website development, submitted a single C patch for a bug in the Tremulous mod, and moderated the servers and forum.
 
@@ -74,9 +73,11 @@ I assisted with website development, submitted a single C patch for a bug in the
 This was a small database backed application written in PHP that helped members of my spelling team practice for competitions - sounds and definitions were pulled from American Heritage's Online Dictionary.
 
 [HostGator.Com, LLC]: http://www.hostgator.com
+[network status forums]: http://forums.hostgator.com/network-status-f14.html
 [University of Illinois at Urbana-Champaign]: http://www.illinois.edu
 [Grand Prairie High School]: http://gphs.gpisd.org
 [The Bike Project of Urbana-Champaign]: http://thebikeproject.org
 [Registered Student Organisation]: http://www.union.uiuc.edu/involvement/rso
 [Knights of Reason]: http://www.knightsofreason.net
 [JASGA Language School]: http://www.jasga.org/news/announcements/fall-2011-japanese-language-program
+[Project Himari]: https://github.com/liliff/project-himari
