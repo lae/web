@@ -32,6 +32,7 @@ ul#links li.last {
 }
 #links li a {
 	color: black;
+	font-size: 1.3em;
 	text-decoration: none;
 	display: block;
 	padding: 0.1em;
@@ -58,4 +59,9 @@ ul#links li.last {
 }
 #content > div {
 	padding: 0.5em;
+}
+pre {
+	overflow: auto;
+	width: 100%;
+	background: #efdfdf;
 }
