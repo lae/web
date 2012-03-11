@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-updated: 2012-01-11
+updated: 2012-01-29
 source: https://github.com/liliff/resume
 ---
 # Musee Ullah
