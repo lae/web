@@ -3,11 +3,7 @@ auto:        false
 server:      true
 server_port: 4000
 name:        成実Musee
-<<<<<<< HEAD
 title:       milkteafuzz.com
-=======
-title:       nia.teppel.in
->>>>>>> 2eb1365c5027fcdea89847e544953d364d28cec4
 baseurl:     /
 url:         http://milkteafuzz.com
 
