@@ -63,5 +63,5 @@ ul#links li.last {
 pre {
 	overflow: auto;
 	width: 100%;
-	background: #efdfdf;
+	background: rgba(239,223,223,0.8);
 }
