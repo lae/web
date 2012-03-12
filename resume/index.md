@@ -14,9 +14,9 @@ Austin, TX
 ## Overview
 
 I am a 20 year old systems administrator and server firefighter aspiring to 
-become a developer. I learn very quickly in action and am not afraid to take on 
-new ventures. I enjoy what I do and hope to someday create and maintain world 
-changing applications.
+become both a developer and administrator. I learn very quickly in action and am 
+not afraid to take on new ventures. I enjoy what I do and hope to someday create 
+and maintain world changing applications.
 
 ## Work Experience
 
@@ -36,26 +36,31 @@ job/out of ~120 admins).
 #### Systems Monitoring - December 2011 to present
 
 As one unit of a small team of monitors (3-4 usually), we proactively monitor 
-the entire farm for issues before they become major. Issues I handle range from 
-CPU abusers, low disk space, and hard drive errors to Denial of Service 
-attacks/flooding, disaster recovery, and individual site performance reviews. 
-Occasionally I do get to make public announcements on our [network status 
-forums][].
+the entire farm (over 4500 servers) for issues before they become major. Issues 
+I handle range from CPU abusers, low disk space, and hard drive errors to Denial 
+of Service attacks/flooding, disaster recovery, and individual site performance 
+reviews. I make public announcements on our [network status forums][] for 
+extended downtime issues.
 
 ## Skills
 
-**OS/Distros:** CentOS 5, CentOS 6, Arch Linux, Gentoo Linux, Fedora, Windows XP  
-**Scripting:** Bash, Ruby, Javascript  
-**Markup:** Markdown, HTML (4.01 and 5), XHTML 1.0, CSS3, YAML, LaTeX, XML  
+**OS/Distros:** CentOS 5, CentOS 6, Arch Linux, Gentoo Linux, Fedora, FreeBSD\*, 
+Ubuntu\*, Windows XP  
+**Scripting:** Bash, Ruby, Javascript\*  
+**Markup:** Markdown, HTML4 (w/ a dab of 5), XHTML 1.0, CSS3, YAML, LaTeX, XML\*  
 **Programming:** PHP  
-**HTTP:** Lighttpd, Apache, nginx, Mongrel, Unicorn, Thin  
+**HTTP:** Lighttpd, Apache, nginx\*, Mongrel, Thin\*  
 **Database:** MySQL  
 **Mail:** Exim, Dovecot, mailx  
-**Monitoring:** Zabbix, sysstat, IPMI, tcpdump/ngrep  
-**Data/FS:** RAID (3ware, Adaptec, MegaRAID), LVM2, FUSE, rsync  
-**Version Control:** RCS, Git, Subversion  
+**Monitoring:** Zabbix, sysstat, IPMI  
+**Network:** tcpdump/ngrep, iptables, iproute2  
+**Data/FS:** RAID (3ware, Adaptec, MegaRAID)\*, LVM2, FUSE, NAS, rsync, testdisk  
+**Version Control:** RCS, Git, Subversion\*  
 **Package Managers:** portage, pacman, yum/rpm  
-**Miscellaneous:** GCC/Compiling, VirtualBox, TightVNC, BIND9, Jekyll  
+**Virtualisation:** Virtuozzo\*, VirtualBox, TightVNC  
+**Miscellaneous:** cPanel/WHM, LAMP, GCC/Compiling, BIND, Jekyll  
+*\* indicates partial understanding and ability to set-up/troubleshoot, and 
+that it is a skill in progress*
 
 ## Volunteer Experience
 
