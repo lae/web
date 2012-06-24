@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-updated: 2012-05-09
+updated: 2012-06-12
 source: https://github.com/liliff/resume/blob/master/resume.md
 ---
 # Musee Ullah
@@ -14,7 +14,7 @@ Austin, TX
 ## Overview
 
 I am a 20 year old systems administrator and server firefighter aspiring to 
-become both a developer and administrator. I learn very quickly in action and am 
+become both a developer and administrator. I learn very quickly in practice and am 
 not afraid to take on new ventures. I enjoy what I do and hope to someday create 
 and maintain world-changing applications.
 
@@ -24,55 +24,65 @@ and maintain world-changing applications.
 
 #### Systems Administrator - June 2011 to present
 
-I resolved hundreds of issues per week through our ticket system across thousands 
-of servers. These ranged from common MySQL issues, backups and restorations, and 
-reboot triage to web server/database tuning, major software upgrades and custom 
-installations, filing bug reports, writing documentation, etc.
+Resolved hundreds of issues per week through a support ticket system, including:  
+- PHP/MySQL/Rails/website/application errors, issues  
+- Backups and restorations  
+- Reboot triage and server tuning (MySQL and Apache particularly)  
+- Software upgrades and installations (Apache/PHP modules, Redmine, phpBB, etc.)  
+Also filed internal bug reports and wrote documentation for our support 
+knowledgebase and internal wikis.
 
-**Highlight**: I was employee of the month for November 2011 (5th month at the 
-job/out of ~120 admins).
+**Highlight**: I was employee of the month for November 2011 (out of ~120 admins).
 
 #### Systems Monitoring - December 2011 to present
 
-As one unit of a small team of monitors (3-4 usually), I proactively monitor the 
-entire shared server portion of our farm (over 4500 servers) for issues before 
-they become major. Issues I handle range from CPU abuse, low disk space, and 
-hard drive errors to Denial of Service attacks/flooding, disaster recovery, and 
-individual site performance reviews. I also make public announcements on our 
-[network status forums][] for extended downtime issues.
+I proactively monitor the shared server portion of our farm (>4500 servers), as
+part of a team (of 1-2 others usually). My typical day consists of the following:  
+- Severe load issues, immediate response and triage, gathering data and acting on it (ties into below)  
+- User abuse issues, mostly site performance related, some spam and miscellaneous abuse  
+- Server health, including disk space/performance issues, filesystem checks, general server happiness, etc.  
+- Network/service uptime, resolving UDP/SYN floods, Slowloris/(D)DoS, broken configurations, etc.  
+- Individual site performance reviews, and keeping sessions open on problem servers all night.  
+I also write [public announcements][] on our [network status forums][] 
+for extended downtime issues.
 
-**Highlight**: I provided significant assistance in migrating the architecture 
-of our shared/reseller servers from 32-bit to 64-bit.
+**Highlight**: I was an important asset in migrating our shared/reseller 
+servers from 32- to 64-bit.
 
 ## Projects
 
 ### [ZMonitor][]
 
-This is a console client for Zabbix that I developed in Ruby, as the Zabbix 
-monitoring software did not come bundled with one. It contacts the API (json) 
-and generates a dashboard-like interface to show current active problems, their 
-acknowledgement status and priority. This client also allows acknowledgement 
-of active triggers, and other features like server history are underway.
+Console client for the Zabbix monitoring suite, developed in Ruby. It 
+interfaces with the Zabbix API using JSON for gathering current active 
+triggers and acknowledging events. It basically provides a CLI dashboard, 
+a method to easily acknowledge several related alerts, and one to feed 
+output to other applications.
 
 ## Skills
 
-**OS/Distros:** CentOS 5, CentOS 6, Arch Linux, Gentoo Linux, Fedora, FreeBSD\*, 
-Ubuntu\*, Windows XP  
-**Scripting:** Bash, Ruby, Javascript\*  
-**Markup:** Markdown, HTML4 (w/ a dab of 5), XHTML 1.0, CSS3, YAML, LaTeX, XML\*  
+**OS/Distros:** CentOS, Arch Linux, Gentoo Linux, Fedora, Ubuntu\*, WinXP  
+**Scripting:** Bash, Ruby  
+**Markup:** Markdown, (X)HTML (incl. HTML5), CSS3, YAML, LaTeX  
 **Programming:** PHP, Ruby  
 **HTTP:** Lighttpd, Apache, nginx\*, Mongrel  
-**Database:** MySQL  
-**Mail:** Exim, Dovecot, mailx  
+**Database:** MySQL, PostgreSQL\*  
+**Mail:** Exim, Dovecot  
 **Monitoring:** Zabbix, sysstat, IPMI  
 **Network:** tcpdump/ngrep, iptables  
-**Data/FS:** RAID (3ware, Adaptec, MegaRAID)\*, LVM2, FUSE, NAS, rsync, testdisk  
-**Version Control:** RCS\*, Git\*, Subversion\*  
+**Data/FS:** RAID (3ware, Adaptec, MegaRAID)\*, LVM2, FUSE, rsync, testdisk  
+**Version Control:** Git\*, Subversion\*  
 **Package Managers:** portage, pacman, yum/rpm  
 **Virtualisation:** Virtuozzo\*, VirtualBox, TightVNC  
-**Miscellaneous:** cPanel/WHM, LAMP, GCC/Compiling\*, BIND, Jekyll  
+**Miscellaneous:** cPanel/WHM, LAMP, GCC/Compiling software, BIND, Jekyll  
 *&#42; indicates partial understanding and ability to set-up/troubleshoot, and that it is a skill in progress*
 
+## Education
+
+**University of Illinois at Urbana-Champaign:** Completed a semester as an East Asian Languages major, 
+with a 4.0 GPA in Japanese.
+
 [HostGator.Com, LLC]: http://www.hostgator.com
+[public announcements]: http://forums.hostgator.com/search.php?do=finduser&u=126179
 [network status forums]: http://forums.hostgator.com/network-status-f14.html
 [ZMonitor]: https://github.com/liliff/zmonitor
