@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>Milk Tea Fuzz - Maintenance</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<div id="hacked"></div>
+<div align="center">
+  <iframe width="640" height="480" src="http://www.youtube.com/embed/QH2-TGUlwu4?rel=0&amp;loop=1&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
+<script type="text/javascript">
+var m=128;var s=100;var l = "HACKED";var e = 'Just kidding. Site\'s just down until I\'m not lazy enough to fix some things.';var n = "hacked";var c=0;var d=0;
+function sleepmoar(){c++;if(c<m){setTimeout('addtext(l)',s);}else{finish();return true;}}
+function addtext(m){var t=document.createTextNode(m+" ");var p=document.getElementById(n);p.appendChild(t);sleepmoar();}
+function finish(){if(d==0){d=1;addtext(e);}else return true;}
+addtext(l);
+</script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.milkteafuzz.com/" : "http://stats.milkteafuzz.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.milkteafuzz.com/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</body>
+</html>
