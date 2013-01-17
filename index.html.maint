@@ -1,9 +1,0 @@
----
-layout: default
-hide_nav: true
----
-<h1 class="content-header">public announcement</h1>
-<p> Site is currently under maintenance and will be back in a few days or so. Old blog posts are accessible from <a href="/archive">the archive</a> and Google. Enjoy some Nyancat while you wait.</p>
-<div align="center">
-  <iframe width="640" height="480" src="http://www.youtube.com/embed/QH2-TGUlwu4?rel=0&amp;loop=1&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
-</div>
