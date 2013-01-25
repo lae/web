@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restructuring
-date: 2013-01-17 02:33:05
+date: 2013-01-17 08:33:05
 ---
 I'm (finally) in the process of redesigning this site. The journal entries 
 will probably be stashed into one corner of the site by then. Anyway, I've 
