@@ -1,20 +1,30 @@
----
-layout: default
----
-<h1 class="content-header">latest entries</h1>
-{% assign posts = paginator.posts %}
-{% for post in posts %}
-<div>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  {{ post.content }}
-</div>
-{% endfor %}
-
-<div style="overflow: auto;">{% if paginator.previous_page %}
-  <div style="display: inline;">&laquo;&nbsp;{% if paginator.previous_page == 1 %}
-    <a href="/" title="index page">newest apples</a>{% else %}
-    <a href="/page{{ paginator.previous_page }}/" rel="previous" title="previous page">newer apples</a>{% endif %}
-  </div>
-{% endif %}{% if paginator.next_page %}
-  <div style="float: right;"><a href="/page{{ paginator.next_page }}/" rel="next" title="next page">older apples</a>&nbsp;&raquo;</div>
-{% endif %}</div>
+<!doctype html>
+<html>
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Cardo);
+* { margin: 0; padding: 0; text-align: center; }
+body { font-family: Cardo, serif; background: #171717; color: #dfdfdf; }
+header, nav { width: 100%; position: absolute; }
+header { bottom: 70%; background: #dfdfdf; color: #171717; padding: 2em 0 0; }
+header p { font-size: 3em; }
+nav { top: 35%; }
+li { list-style: none; line-height: 3em; }
+a { color: inherit; text-decoration: none; font-size: 2em; }
+a:hover { text-decoration: underline; color: #fff; }
+    </style>
+</head>
+<body>
+    <header><p>milk tea fuzz</p></header>
+    <nav>
+        <ul>
+            <li><a href="#">resume</a></li>
+            <li><a href="#">journal</a></li>
+            <li><a href="#">snippets</a></li>
+            <li><a href="#">git</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
