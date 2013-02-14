@@ -3,7 +3,7 @@ auto:        false
 server:      true
 server_port: 4000
 name:        成実Musee
-title:       milkteafuzz.com
+title:       milk tea fuzz
 baseurl:     /
 url:         http://milkteafuzz.com
 
@@ -15,8 +15,18 @@ future:      true
 lsi:         false
 pygments:    false
 markdown:    rdiscount
-permalink:   pretty
+permalink:   /j/:year/:month/:day/:title/
 paginate:    3
 
 rdiscount:
   extensions: []
+
+homelinks:
+    - title: resume
+      uri: resume
+    - title: journal
+      uri: j
+    - title: snippets
+      uri: s
+    - title: git
+      uri: http://github.com/liliff
