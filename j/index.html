@@ -12,9 +12,9 @@ layout: default
 
 <div style="overflow: auto;">{% if paginator.previous_page %}
   <div style="display: inline;">&laquo;&nbsp;{% if paginator.previous_page == 1 %}
-    <a href="/" title="index page">newest apples</a>{% else %}
-    <a href="/page{{ paginator.previous_page }}/" rel="previous" title="previous page">newer apples</a>{% endif %}
+    <a href="/j" title="index page">newest apples</a>{% else %}
+    <a href="/j/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer apples</a>{% endif %}
   </div>
 {% endif %}{% if paginator.next_page %}
-  <div style="float: right;"><a href="/page{{ paginator.next_page }}/" rel="next" title="next page">older apples</a>&nbsp;&raquo;</div>
+  <div style="float: right;"><a href="/j/p/{{ paginator.next_page }}/" rel="next" title="next page">older apples</a>&nbsp;&raquo;</div>
 {% endif %}</div>

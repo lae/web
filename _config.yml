@@ -2,7 +2,7 @@ safe:        false
 auto:        false
 server:      true
 server_port: 4000
-name:        成実Musee
+name:        lae
 title:       milk tea fuzz
 baseurl:     /
 url:         http://milkteafuzz.com
@@ -17,6 +17,7 @@ pygments:    false
 markdown:    rdiscount
 permalink:   /j/:year/:month/:day/:title/
 paginate:    3
+paginate_path:  j/p/:num
 
 rdiscount:
   extensions: []
