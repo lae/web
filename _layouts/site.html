@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/favicon.png" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cardo" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" />
-    <link rel="stylesheet" href="/css/journal.css" />
+    <link rel="stylesheet" href="/css/site.css" />
 </head>
 <body>
 <section id="string">
@@ -54,7 +54,6 @@
 <section id="twine">
 {{ content }}
 </section>
-{% include footer.html %}
 <footer id="thimble">
     <span>{% if page.previous.url %}
         &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>{% elsif paginator.previous_page %}{% if paginator.previous_page == 1 %}
