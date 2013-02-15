@@ -34,10 +34,10 @@ p { text-align: justify; }
 	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 }
 #knob:checked ~ section { height: 150px; }
-#knob ~ #door p:first-child { display: inline; }
-#knob ~ #door p:last-child { display: none; }
-#knob:checked ~ #door p:first-child { display: none; }
-#knob:checked ~ #door p:last-child { display: inline; }
+#knob ~ #door em:first-child { display: inline; }
+#knob ~ #door em:last-child { display: none; }
+#knob:checked ~ #door em:first-child { display: none; }
+#knob:checked ~ #door em:last-child { display: inline; }
 #knob { display: none; }
 #closet { padding-right: 180px; }
 #closet > * { display: table-cell; padding: 0 1em; }
