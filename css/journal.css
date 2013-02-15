@@ -10,7 +10,8 @@ p { text-align: justify; }
 	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
 	position: absolute;
 	z-index: 10;
-}#door {
+}
+#door {
 	height: 1.6em;
 	background: #373737;
 	color: #dfdfdf;
@@ -52,7 +53,7 @@ p { text-align: justify; }
 	width: 48%;
 	list-style: none;
 }
-.links li a { color: inherit; padding: 0 0.5em 0.1em;  display: block; }
+.links li a { color: inherit; padding: 0 0.25em 0.1em;  display: block; }
 .links li a:hover {
 	background: #373737;
 	color: #dfdfdf;
