@@ -172,7 +172,6 @@ module Jekyll
 
   end
 
-
   # Jekyll hook - the generate method is called by jekyll, and generates all of the category pages.
   class GenerateCategories < Generator
     safe true
@@ -193,7 +192,6 @@ module Jekyll
     end
 
   end
-
 
   # Adds some extra filters used during the category creation process.
   module Filters
