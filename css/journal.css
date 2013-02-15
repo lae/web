@@ -10,8 +10,7 @@ p { text-align: justify; }
 	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
 	position: absolute;
 	z-index: 10;
-}
-#door {
+}#door {
 	height: 1.6em;
 	background: #373737;
 	color: #dfdfdf;
@@ -35,7 +34,7 @@ p { text-align: justify; }
 	-moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 }
-#knob:checked ~ section { height: 125px; }
+#knob:checked ~ section { height: 150px; }
 #knob ~ #door p:first-child { display: inline; }
 #knob ~ #door p:last-child { display: none; }
 #knob:checked ~ #door p:first-child { display: none; }
