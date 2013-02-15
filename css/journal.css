@@ -33,23 +33,23 @@ p { text-align: justify; }
 	-moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 }
-#knob:checked ~ section { height: 150px; }
+#knob:checked ~ section { height: 170px; }
 #knob ~ #door em:first-child { display: inline; }
 #knob ~ #door em:last-child { display: none; }
 #knob:checked ~ #door em:first-child { display: none; }
 #knob:checked ~ #door em:last-child { display: inline; }
 #knob { display: none; }
-#closet { padding-right: 180px; }
+#closet { padding-right: 180px; width: 100%; }
 #closet > * { display: table-cell; padding: 0 1em; }
-.about { font-size: 0.9em; padding-right: 2em; }
+.about { padding-right: 2em; width: 400px; }
 .about .gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
-.links { width: 25%; }
 .links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
 .links li {
 	display: inline-block;
 	padding-top: 0.1em;
 	width: 48%;
 	list-style: none;
+	font-size: 1.1em;
 }
 .links li a { color: inherit; padding: 0 0.25em 0.1em;  display: block; }
 .links li a:hover {
@@ -71,6 +71,6 @@ p { text-align: justify; }
 .entry header h2 { font-size: 1.3em; background: #373737; }
 .entry header h2 a { color: #dfdfdf; padding: .1em 2em; display: block; }
 .entry header h2 a:hover { background: #7f0f0f; text-decoration: none; }
-.entry article { padding: 0.4em; text-indent: 2em; font-size: 1.1em; }
-.entry article p {  }
+.entry article { padding: 0.4em; text-indent: 2em; font-size: 1em; }
+.entry article p { font-family: "Open Sans", "MS Gothic", IPA Gothic, Osaka, sans-serif; }
 .entry article p + p { margin-top: 0.5em; }
