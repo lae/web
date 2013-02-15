@@ -2,19 +2,10 @@
 layout: journal
 ---
 {% assign posts = paginator.posts %}{% for post in posts %}
-    <section class="entry">
-        <header><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
-        <article>
+<section class="entry">
+    <header><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
+    <article>
 {{ post.content }}
-        </article>
-    </section>
+    </article>
+</section>
 {% endfor %}
-
-<div style="overflow: auto;">{% if paginator.previous_page %}
-  <div style="display: inline;">&laquo;&nbsp;{% if paginator.previous_page == 1 %}
-    <a href="/j" title="index page">newest apples</a>{% else %}
-    <a href="/j/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer apples</a>{% endif %}
-  </div>
-{% endif %}{% if paginator.next_page %}
-  <div style="float: right;"><a href="/j/p/{{ paginator.next_page }}/" rel="next" title="next page">older apples</a>&nbsp;&raquo;</div>
-{% endif %}</div>

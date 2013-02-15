@@ -12,10 +12,18 @@
 <section id="string">
     <input type="checkbox" id="knob" />
     <section>
-        <div id="closet" class="table">
-            <div class="about"><img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png" alt="liliff's gravatar" class="gravatar" />
-            <p><abbr title="Welcome!">いらしゃいませ!</abbr> I'm Musee, also known as lae in many places. I'm a system administrator and developer who mostly just hacks things here and there nowadays. 
-            I currently co-admin the server for the <a href="http://knightsofreason.net">Knights of Reason</a> community and develop applications for <a href="http://commiesubs.com">Commie Subs</a>.</p></div>
+        <div id="closet">
+            <div class="about">{% if page.title %}
+                <h2>metadata</h2>
+                <strong>Title:</strong> {{ page.title }}{% if page.date %}<br />
+                <strong>Created on:</strong> {{ page.date }}{% endif %}{% if page.updated %}<br />
+                <strong>Updated on:</strong> {{ page.updated }}{% endif %}{% if page.source %}<br />
+                <strong>Source:</strong> {{ page.source }}{% endif %}{% if page.categories.size > 0 %}<br />
+                <strong>{% if page.categories.size == 1 %}Category{% else %}Categories{% endif %}:</strong> {% for c in page.categories %}{{ c | capitalize }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}{% if page.tags.size > 0 %}<br />
+                <strong>Tags:</strong> {{ page.tags | array_to_sentence_string }}{% endif %}{% else %}
+                <img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png" alt="liliff's gravatar" class="gravatar" />
+                <p><abbr title="Welcome!">いらしゃいませ!</abbr> I'm Musee, often referred to as lae on the interwebs. I'm an entry-level system administrator and developer who mostly just hacks things here and there nowadays. I currently co-admin the server for the <a href="http://knightsofreason.net">Knights of Reason</a> community and develop applications for <a href="http://commiesubs.com">Commie Subs</a>.</p>{% endif %}
+            </div>
             <nav class="links">
                 <h2>navigation</h2>
                 <ul>
@@ -35,7 +43,7 @@
                     <li><a href="/j/personal">personal</a></li>
                     <li><a href="/j/projects">projects</a></li>
                     <li><a href="/j/code">code</a></li>
-                    <li><a href="/j/customization">desktop</a></li>
+                    <li><a href="/j/desktop">desktop</a></li>
                 </ul>
             </nav>
             <div></div>
@@ -46,5 +54,30 @@
 <section id="twine">
 {{ content }}
 </section>
+{% include footer.html %}
+<footer id="thimble">
+    <span>{% if page.previous.url %}
+        &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>{% elsif paginator.previous_page %}{% if paginator.previous_page == 1 %}
+        &laquo;&nbsp;<a href="/j" title="index page" rel="previous">newest leaves</a>{% else %}
+        &laquo;&nbsp;<a href="/j/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
+        &laquo;&nbsp;<script>document.write('<a href="'+document.referrer+'">where you were before</a>');</script>{% endif %}
+    </span>
+    <span>{% if page.next.url %}
+        <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;{% elsif paginator.next_page and page.url != "/archive/index.html" %}
+        <a href="/j/p/{{ paginator.next_page }}/" rel="next" title="next page">older leaves {{ page.id }}</a>&nbsp;&raquo;{% endif %}
+    </span>
+</footer>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.milkteafuzz.com/" : "http://stats.milkteafuzz.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.milkteafuzz.com/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
 </body>
 </html>

@@ -3,6 +3,8 @@ body { font-family: Cardo, "MS Mincho", IPAMincho, serif; }
 a { color: #cf1f1f; text-decoration: none; }
 a:hover { text-decoration: underline; background: rgba(0,0,0,0.07); }
 p { text-align: justify; }
+
+/* drop-down css3 menu */
 #string {
 	width: 100%;
 	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
@@ -25,6 +27,7 @@ p { text-align: justify; }
 	cursor: pointer;
 }
 #door span { float: right; padding-right: 0.5em; }
+#knob { display: none; }
 #knob ~ section {
 	height: 0;
 	overflow: hidden;
@@ -38,8 +41,7 @@ p { text-align: justify; }
 #knob ~ #door em:last-child { display: none; }
 #knob:checked ~ #door em:first-child { display: none; }
 #knob:checked ~ #door em:last-child { display: inline; }
-#knob { display: none; }
-#closet { width: 100%; }
+#closet { width: 100%; display: table; }
 #closet > * { display: table-cell; padding: 0 1%; }
 #closet > *:last-child { width: 180px; padding: 0; }
 .about { padding-right: 2em; width: 400px; }
@@ -52,26 +54,78 @@ p { text-align: justify; }
 	list-style: none;
 	font-size: 1.1em;
 }
-.links li a { color: inherit; padding: 0 0.25em 0.1em;  display: block; }
+.links li a {
+	color: inherit;
+	padding: 0 0.25em 0.1em;
+	display: block;
+}
 .links li a:hover {
 	background: #373737;
 	color: #dfdfdf;
 	text-decoration: none;
 }
-.table { display: table; }
-#twine { position: absolute; top: 1.6em; bottom: 0; overflow: auto; }
-.entry {
-	width: 80%;
-	margin: 1em auto;
+
+/* main content body */
+#twine {
+	position: absolute;
+	top: 1.6em;
+	bottom: 1.6em;
+	overflow: auto;
+	width: 100%;
+}
+.entry, .archive {
+	width: 90%;
+	margin: 1em auto 2.5em;
 	background: #efefef;
 	border: 1px solid #3f3f3f;
 	border-radius: 0 0 1em 1em;
 	box-shadow: 12px 12px 18px -6px #9f9f9f;
 }
-.entry + .entry { margin-top: 2.5em; }
-.entry header h2 { font-size: 1.3em; background: #373737; }
-.entry header h2 a { color: #dfdfdf; padding: .1em 2em; display: block; }
+.entry header h2, .archive header h2 { font-size: 1.3em; background: #373737; }
+.entry header h2 a {
+	color: #dfdfdf;
+	padding: .1em 2em;
+	display: block;
+}
 .entry header h2 a:hover { background: #7f0f0f; text-decoration: none; }
-.entry article { padding: 0.4em; text-indent: 2em; font-size: 1em; }
-.entry article p { font-family: "Open Sans", "MS Gothic", IPA Gothic, Osaka, sans-serif; }
-.entry article p + p { margin-top: 0.5em; }
+.entry article {
+	padding: 0.3em 1.3em;
+	text-indent: 2em;
+	font-size: 1em;
+}
+.entry article p {
+	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
+	margin: 0.4em 0;
+}
+.post {
+	width: 90%;
+	margin: 1em auto;
+}
+.post aside:first-child { text-align: center; color: #878787; }
+.post header h1 { text-align: center; font-size: 2em; margin-bottom: 0.3em; }
+.post article {
+	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
+	margin-left: 10%;
+}
+.post article p { margin: 0.6em 0; }
+.post aside:last-child { margin: 3em 0 0 10%; }
+.post aside:last-child img { vertical-align: text-top; }
+.archive header h2 { color: #dfdfdf; padding: .1em 2em; display: block; }
+.archive nav { padding: 1em; }
+.archive li { list-style: none; }
+.archive a { font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif; }
+/* footer bar */
+#thimble {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1.6em;
+	background: #373737;
+	color: #dfdfdf;
+	font-family: "Open Sans", sans-serif;
+	display: table;
+}
+#thimble span { display: table-cell; padding: 0 1em; }
+#thimble span:last-child { text-align: right; }
+#thimble a { font-size: 0.9em; color: inherit; }
+

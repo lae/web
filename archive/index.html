@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: journal
 ---
-<h1 class="content-header">archive</h1>
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <em>({{ post.date | date: "%Y.%m.%d"}})</em></li>
-{% endfor %}
-</ul>
+<section class="archive">
+    <header><h2>archive</h2></header>
+    <nav>
+        <ul>{% for post in site.posts %}
+            <li>{ {{ post.date | date: "%Y.%m.%d"}} } <a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+        </ul>
+    </nav>
+</section>
