@@ -61,4 +61,18 @@ p { text-align: justify; }
 }
 .table { display: table; }
 #twine { position: absolute; top: 1.6em; bottom: 0; overflow: auto; }
-article { }
+.entry {
+	width: 80%;
+	margin: 1em auto;
+	background: #efefef;
+	border: 1px solid #3f3f3f;
+	border-radius: 0 0 1em 1em;
+	box-shadow: 12px 12px 18px -6px #9f9f9f;
+}
+.entry + .entry { margin-top: 2.5em; }
+.entry header h2 { font-size: 1.3em; background: #373737; }
+.entry header h2 a { color: #dfdfdf; padding: .1em 2em; display: block; }
+.entry header h2 a:hover { background: #7f0f0f; text-decoration: none; }
+.entry article { padding: 0.4em; text-indent: 2em; font-size: 1.1em; }
+.entry article p {  }
+.entry article p + p { margin-top: 0.5em; }
