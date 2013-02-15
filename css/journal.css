@@ -24,7 +24,7 @@ p { text-align: justify; }
 	display: block;
 	cursor: pointer;
 }
-#door div { float: right; padding-right: 0.5em; }
+#door span { float: right; padding-right: 0.5em; }
 #knob ~ section {
 	height: 0;
 	overflow: hidden;
