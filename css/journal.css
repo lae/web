@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Cardo);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* { margin: 0; padding: 0; }
+body { font-family: Cardo, "MS Mincho", IPAMincho, serif; }
+a { color: #cf1f1f; text-decoration: none; }
+a:hover { text-decoration: underline; background: rgba(0,0,0,0.07); }
+p { text-align: justify; }
+header {
+	width: 100%;
+	background: #ffdfcf url("hisaxmas.png") right top no-repeat;
+}
+#door {
+	height: 1.6em;
+	background: #373737;
+	color: #dfdfdf;
+}
+#door label {
+	font-family: "Open Sans", sans-serif;
+	padding: 0.2em 0;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+	text-indent: 1em;
+	display: block;
+	cursor: pointer;
+}
+#door div { float: right; padding-right: 0.5em; }
+#knob ~ nav {
+	height: 0;
+	overflow: hidden;
+	transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+	-webkit-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+	-moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+}
+#knob:checked ~ nav { height: 125px; }
+#knob ~ #door p:first-child { display: inline; }
+#knob ~ #door p:last-child { display: none; }
+#knob:checked ~ #door p:first-child { display: none; }
+#knob:checked ~ #door p:last-child { display: inline; }
+#knob { display: none; }
+#oranges { padding-right: 160px; }
+#oranges div { display: table-cell; padding: 0 1.5em; }
+.about { font-size: 0.9em; padding-right: 2em; }
+.about .gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
+.links { width: 22%; }
+.links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
+.links li {
+	display: inline-block;
+	padding-top: 0.1em;
+	width: 49%;
+	list-style: none;
+}
+.links li a { color: inherit; padding: 0 0.5em 0.1em;  display: block; }
+.links li a:hover {
+	background: #373737;
+	color: #dfdfdf;
+	padding-left: 1em;
+	text-decoration: none;
+}
+.table { display: table; }
