@@ -9,14 +9,14 @@
     </style>
 </head>
 <body>
-<header>
+<section id="string">
     <input type="checkbox" id="knob" />
-    <nav>
-        <div id="oranges" class="table">
+    <section>
+        <div id="closet" class="table">
             <div class="about"><img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png" alt="liliff's gravatar" class="gravatar" />
             <p>いらしゃいませ! I'm Mustaque Ullah, often referred to as Lae or Musee. I'm a system administrator and developer who mostly just hacks things here and there nowadays. 
             I currently co-admin the server for the <a href="http://knightsofreason.net">Knights of Reason</a> community and develop applications for <a href="http://commiesubs.com">Commie Subs</a>.</p></div>
-            <div class="links">
+            <nav class="links">
                 <h2>site navigation</h2>
                 <ul>
                     <li><a href="/resume">resume</a></li>
@@ -26,23 +26,24 @@
                     <li><a href="/contact">contact</a></li>
                     <li><a href="/sitemap">sitemap</a></li>
                 </ul>
-            </div>
-            <div class="links">
+            </nav>
+            <nav class="links">
                 <h2>journal navigation</h2>
                 <ul>
                     <li><a href="/j">home</a></li>
                     <li><a href="archive">archive</a></li>
                     <li><a href="/j/personal">personal</a></li>
-                    <li><a href="/j/programming">programming</a></li>
                     <li><a href="/j/projects">projects</a></li>
+                    <li><a href="/j/programming">programming</a></li>
                     <li><a href="/j/customization">desktop</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
-    <div id="door"><label for="knob">milk tea fuzz <div><p>▼</p><p>▲</p></div></label></div>
-</header>
+    </section>
+    <header id="door"><label for="knob">{{ site.title }}<div><p>▼</p><p>▲</p></div></label></header>
+</section>
+<section id="twine">
 {{ content }}
-
+</section>
 </body>
 </html>

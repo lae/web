@@ -5,9 +5,11 @@ body { font-family: Cardo, "MS Mincho", IPAMincho, serif; }
 a { color: #cf1f1f; text-decoration: none; }
 a:hover { text-decoration: underline; background: rgba(0,0,0,0.07); }
 p { text-align: justify; }
-header {
+#string {
 	width: 100%;
 	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
+	position: absolute;
+	z-index: 10;
 }
 #door {
 	height: 1.6em;
@@ -25,7 +27,7 @@ header {
 	cursor: pointer;
 }
 #door div { float: right; padding-right: 0.5em; }
-#knob ~ nav {
+#knob ~ section {
 	height: 0;
 	overflow: hidden;
 	transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
@@ -33,22 +35,22 @@ header {
 	-moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
 }
-#knob:checked ~ nav { height: 125px; }
+#knob:checked ~ section { height: 125px; }
 #knob ~ #door p:first-child { display: inline; }
 #knob ~ #door p:last-child { display: none; }
 #knob:checked ~ #door p:first-child { display: none; }
 #knob:checked ~ #door p:last-child { display: inline; }
 #knob { display: none; }
-#oranges { padding-right: 160px; }
-#oranges div { display: table-cell; padding: 0 1.5em; }
+#closet { padding-right: 180px; }
+#closet > * { display: table-cell; padding: 0 1em; }
 .about { font-size: 0.9em; padding-right: 2em; }
 .about .gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
-.links { width: 22%; }
+.links { width: 25%; }
 .links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
 .links li {
 	display: inline-block;
 	padding-top: 0.1em;
-	width: 49%;
+	width: 48%;
 	list-style: none;
 }
 .links li a { color: inherit; padding: 0 0.5em 0.1em;  display: block; }
@@ -59,3 +61,5 @@ header {
 	text-decoration: none;
 }
 .table { display: table; }
+#twine { position: absolute; top: 1.6em; bottom: 0; overflow: auto; }
+article { }
