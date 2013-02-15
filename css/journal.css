@@ -39,8 +39,9 @@ p { text-align: justify; }
 #knob:checked ~ #door em:first-child { display: none; }
 #knob:checked ~ #door em:last-child { display: inline; }
 #knob { display: none; }
-#closet { padding-right: 180px; width: 100%; }
-#closet > * { display: table-cell; padding: 0 1em; }
+#closet { width: 100%; }
+#closet > * { display: table-cell; padding: 0 1%; }
+#closet > *:last-child { width: 180px; padding: 0; }
 .about { padding-right: 2em; width: 400px; }
 .about .gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
 .links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
