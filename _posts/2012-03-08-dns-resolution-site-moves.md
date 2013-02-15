@@ -2,6 +2,7 @@
 layout: post
 title: DNS Resolution and Site Moves
 date: 2012-03-08 19:43:28
+categories: personal
 ---
 For now I have \*.milkteafuzz.com and \*.teppel.in currently pointing to the same 
 server and document root. Anyone who's visiting for anime.milkteafuzz.com or some 

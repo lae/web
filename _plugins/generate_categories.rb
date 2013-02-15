@@ -223,18 +223,6 @@ module Jekyll
       end
     end
 
-    # Outputs the post.date as formatted html, with hooks for CSS styling.
-    #
-    #  +date+ is the date object to format as HTML.
-    #
-    # Returns string
-    def date_to_html_string(date)
-      result = '<span class="month">' + date.strftime('%b').upcase + '</span> '
-      result += date.strftime('<span class="day">%d</span> ')
-      result += date.strftime('<span class="year">%Y</span> ')
-      result
-    end
-
   end
 
 end

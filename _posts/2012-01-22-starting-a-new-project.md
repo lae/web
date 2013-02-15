@@ -2,6 +2,7 @@
 layout: post
 title: Starting a new project!
 date: 2012-01-22 10:00:00
+categories: projects
 ---
 So, I started a new project called [Project Himari][] (and it's being hosted on 
 github) that I'd like to become a complete maintenance suite for my server and 

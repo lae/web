@@ -2,6 +2,7 @@
 layout: post
 title: Knights of Reason / Tremulous server
 date: 2012-01-22 13:30:00
+categories: personal
 ---
 Per request by a old fellow KoR member, I've set up a tremulous 1.2 server at
 nia.teppel.in:30720. You should be able to connect normally with Trem's client 

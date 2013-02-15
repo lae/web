@@ -2,6 +2,7 @@
 layout: post
 title: Server Switch!
 date: 2012-03-01 15:32:11
+categories: personal
 ---
 So, yesterday I had my first dedicated server provisioned, and I've been tinkering 
 with it since then, getting it configured as nicely as I can, with LVM and all sorts 

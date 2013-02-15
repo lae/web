@@ -2,6 +2,7 @@
 layout: post
 title: Mailserver, DNS Changes and More
 date: 2012-06-25 18:32:43
+categories: personal projects
 ---
 This weekend was pretty productive for me. I've set up Postfix and Dovecot 
 both on this server so now I'm serving mail from @milkteafuzz.com (primarily 
