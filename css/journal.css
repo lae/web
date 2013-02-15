@@ -57,7 +57,6 @@ p { text-align: justify; }
 .links li a:hover {
 	background: #373737;
 	color: #dfdfdf;
-	padding-left: 1em;
 	text-decoration: none;
 }
 .table { display: table; }
