@@ -12,7 +12,11 @@
 <section id="string">
     <input type="checkbox" id="knob" />
     <section>
-        <div id="closet">{% if page.title %}
+        <div id="closet">{% if page.category %}
+            <div class="metadata">
+                <h2>metadata</h2>
+                <strong>Category:</strong> {{ page.category }} <br />
+                <strong>Number of Posts:</strong> {{ site.categories[page.category].size }}{% elsif page.title %}
             <div class="metadata">
                 <h2>metadata</h2>
                 <strong>Title:</strong> {{ page.title }}{% if page.date %}<br />

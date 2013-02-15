@@ -18,6 +18,8 @@ markdown:    rdiscount
 permalink:   /j/:year/:month/:day/:title/
 paginate:    4
 paginate_path:  j/p/:num
+category_dir: /j/
+category_title_prefix: ''
 
 rdiscount:
   extensions: []
