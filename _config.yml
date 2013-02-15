@@ -16,7 +16,7 @@ lsi:         false
 pygments:    false
 markdown:    rdiscount
 permalink:   /j/:year/:month/:day/:title/
-paginate:    3
+paginate:    4
 paginate_path:  j/p/:num
 
 rdiscount:
