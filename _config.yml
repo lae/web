@@ -29,7 +29,5 @@ homelinks:
       uri: resume
     - title: journal
       uri: j
-    - title: snippets
-      uri: s
     - title: git
       uri: http://github.com/liliff
