@@ -31,3 +31,5 @@ homelinks:
       uri: j
     - title: git
       uri: http://github.com/liliff
+    - title: contact
+      uri: contact

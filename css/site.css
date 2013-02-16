@@ -115,7 +115,7 @@ p { text-align: justify; }
 	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
 	margin-left: 10%;
 }
-.post article p { margin: 0.6em 0; }
+.post article p { margin: 1em 0; text-indent: 2em; }
 .post aside:last-child { margin: 3em 0 0 10%; }
 .post aside:last-child img { vertical-align: text-top; }
 .archive header h2 { color: #dfdfdf; padding: .1em 2em; display: block; }

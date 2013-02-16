@@ -111,9 +111,8 @@ duration (in other words, it's not difficult to write a `while true` loop
 that runs scp every minute on a randomly generated file). Since SCP doesn't 
 even pass the IP of the uploader, you can't deny requests to certain IPs 
 (well, I suppose you could parse `netstat`, but that doesn't seem like 
-a reliable, effective method).
-
-  
+a reliable, effective method).  
+<br />
 
 In short, I would only use this to provide a service to friends and others 
 I can trust not to abuse it. If either of those two problems have a solution 
