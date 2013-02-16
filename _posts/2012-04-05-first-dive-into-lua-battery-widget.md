@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Dive Into Lua - A Battery Widget
-date: 2012-04-05 14:16:49
+date: 2012-04-05 09:16
 categories: code desktop
 ---
 So, it's come to the point where my laptop has unexpectedly turned off from 

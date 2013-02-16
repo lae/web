@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Knights of Reason / Tremulous server
-date: 2012-01-22 13:30:00
+date: 2012-01-22 07:30
 categories: personal
 ---
 Per request by a old fellow KoR member, I've set up a tremulous 1.2 server at

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Restructuring
-date: 2013-01-17 08:33:05
-updated: 2013-02-15 11:31
+date: 2013-01-17 02:33
+updated: 2013-02-15 05:31
 categories: personal
 ---
 Update 2/15:

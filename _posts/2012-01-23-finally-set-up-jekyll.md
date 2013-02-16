@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Finally set up Jekyll!
-date: 2012-01-23 19:25
+date: 2012-01-23 13:25
 categories: personal
 ---
 Tah-dah! This site is now officially powered by [Jekyll][].

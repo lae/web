@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mailserver, DNS Changes and More
-date: 2012-06-25 18:32:43
+date: 2012-06-25 13:32
 categories: personal projects
 ---
 This weekend was pretty productive for me. I've set up Postfix and Dovecot 
@@ -11,11 +11,12 @@ configured my IRC client to send me texts whenever I'm away and highlighted
 or messaged, following [Michael Lustfield's][] [Irssi to SMS][] article for 
 the most part.
 
-In addition to the kyoto.maidlab.jp (see my [previous post][]), I've moved my 
-DNS to [afraid.org's][] nameservers for milkteafuzz.com, and currently in the 
-process of transferring clkwkornj.com to [NearlyFreeSpeech][] (I've used them 
-for about 5 years now - they're great) and will be hosting its DNS on 
-afraid.org, also.
+In addition to the kyoto.maidlab.jp (see my 
+<a href="{% post_url 2012-06-25-kyoto.maidlab.jp %}">my previous post</a>), 
+I've moved my DNS to [afraid.org's][] nameservers for milkteafuzz.com, and 
+currently in the process of transferring clkwkornj.com to [NearlyFreeSpeech][] 
+(I've used them for about 5 years now - they're great) and will be hosting 
+its DNS on afraid.org, also.
 
 I am set to move to Chicago in about a month (and consequently leaving my job, 
 sadly) and once I do I'll probably start setting things up out of my apartment. 
@@ -33,7 +34,6 @@ site, so I might do that sometime soon. For now though, time to sleep. Possibly.
 
 [Michael Lustfield's]: http://michael.lustfield.net
 [Irssi to SMS]: http://michael.lustfield.net/content/irssi-sms
-[previous post]: http://milkteafuzz.com/2012/06/25/kyoto.maidlab.jp/
 [afraid.org's]: http://freedns.afraid.org
 [NearlyFreeSpeech]: http://nearlyfreespeech.net
 [survival minecraft server]: http://forums.knightsofreason.net/viewtopic.php?f=140&t=7634

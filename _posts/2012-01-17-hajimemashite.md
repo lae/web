@@ -1,7 +1,7 @@
 ---
 layout: post
 title: はじめまして
-date: 2012-01-17 17:00:00
+date: 2012-01-17 11:00
 categories: personal
 ---
 Hi, my name is Musee. I'm currently a systems administrator who's actually 

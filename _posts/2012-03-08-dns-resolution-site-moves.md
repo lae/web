@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DNS Resolution and Site Moves
-date: 2012-03-08 19:43:28
+date: 2012-03-08 13:43
 categories: personal
 ---
 For now I have \*.milkteafuzz.com and \*.teppel.in currently pointing to the same 

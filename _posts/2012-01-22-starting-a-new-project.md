@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Starting a new project!
-date: 2012-01-22 10:00:00
+date: 2012-01-22 04:00
 categories: projects
 ---
 So, I started a new project called [Project Himari][] (and it's being hosted on 
