@@ -5,11 +5,10 @@ date: 2013-02-16 07:54
 categories: code
 ---
 Half a year ago, I wrote a poorly detailed post about setting up 
-<a href="{% post_url 2012-06-25-kyoto.maidlab.jp %}">a public upload site using SSH</a>, 
-which used the `authorized_keys` file to restrict the key to an rsync command 
-with certain flags enabled and a specified destination directory. This was 
-pretty poorly implemented so I ended up removing the upload script and private 
-key to prevent abuse.
+[a public upload site using SSH][], which used the `authorized_keys` file 
+to restrict the key to an rsync command with certain flags enabled and a 
+specified destination directory. This was pretty poorly implemented so I 
+ended up removing the upload script and private key to prevent abuse.
 
 Some time ago I did look into finding solutions to prevent all the mishaps 
 that could have happened with that method. I ended up writing a pass-through 
@@ -120,5 +119,5 @@ In short, I would only use this to provide a service to friends and others
 I can trust not to abuse it. If either of those two problems have a solution 
 I'm not aware about, I'm open to suggestions (and new knowledge, of course).
 
-[a public upload site using SSH]: 
+[a public upload site using SSH]: {% post_url 2012-06-25-kyoto.maidlab.jp %}
 [data store]: http://redis.io

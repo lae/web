@@ -14,7 +14,7 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 pygments:    false
-markdown:    rdiscount
+markdown:    redcarpet
 permalink:   /j/:year/:month/:day/:title/
 paginate:    4
 paginate_path:  j/p/:num
