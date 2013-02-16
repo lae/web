@@ -89,13 +89,10 @@ p { text-align: justify; }
 	display: block;
 }
 .entry header h2 a:hover { background: #7f0f0f; text-decoration: none; }
-.entry article {
-	padding: 0.3em 1.3em;
-	text-indent: 2em;
-	font-size: 1em;
-}
+.entry article { padding: 0.3em 1.3em; font-size: 1em; }
 .entry article p {
 	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
+	text-indent: 2em;
 	margin: 0.4em 0;
 }
 .entry .metadata {
