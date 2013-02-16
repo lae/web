@@ -44,9 +44,9 @@ p { text-align: justify; }
 #closet { width: 100%; display: table; padding: 0 0 0 1%; }
 #closet > nav { display: table-cell; padding: 0 1% 0 0; }
 #closet > *:last-child { width: 180px; }
-.about { padding-right: 1em; width: 400px; }
-#closet .metadata { padding-right: 1em; }
+#closet > *:first-child { padding-right: 1em; min-width: 400px; }
 .gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
+.links { width: 25%; }
 .links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
 .links li {
 	display: inline-block;
@@ -103,10 +103,9 @@ p { text-align: justify; }
 	width: 100%;
 	background: #373737;
 	color: #dfdfdf;
-	padding: 0.1em 1.5em;
 	border-radius: 0 0 1em 1em;
 }
-.entry .metadata span { display: table-cell; }
+.entry .metadata span { display: table-cell; padding: 0.1em 1.5em;}
 .entry .metadata span:last-child { text-align: right; }
 .entry .metadata a { color: #afafaf; }
 .post {
