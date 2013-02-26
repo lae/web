@@ -21,9 +21,6 @@ paginate_path:  j/p/:num
 category_dir: /j/
 category_title_prefix: ''
 
-rdiscount:
-  extensions: []
-
 homelinks:
     - title: resume
       uri: resume
