@@ -95,6 +95,10 @@ p { text-align: justify; }
 	text-indent: 2em;
 	margin: 0.4em 0;
 }
+.entry article ul { padding-left: 2em; }
+.entry article li {
+	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
+}
 .entry .metadata {
 	display: table;
 	width: 100%;
@@ -115,6 +119,7 @@ p { text-align: justify; }
 	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
 	margin-left: 10%;
 }
+.post article ul { padding-left: 4em; }
 .post article p { margin: 1em 0; text-indent: 2em; }
 .post aside:last-child { margin: 3em 0 0 10%; }
 .post aside:last-child img { vertical-align: text-top; }
@@ -137,4 +142,3 @@ p { text-align: justify; }
 #thimble span { display: table-cell; padding: 0 1em; }
 #thimble span:last-child { text-align: right; }
 #thimble a { font-size: 0.9em; color: inherit; }
-
