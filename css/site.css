@@ -128,6 +128,17 @@ p { text-align: justify; }
 .archive nav { padding: 1em; }
 .archive li { list-style: none; }
 .archive a { font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif; }
+div.highlight {
+	background: #f6c7cf url("/images/codestripes.png") repeat scroll 0 -10px;
+	overflow: auto;
+	margin: 1em 0;
+	padding: 10px 8px 10px 12px; 
+	border: 1px solid #f6878f;
+	border-left-width: 8px;
+	border-radius: 4px 0 0 4px;
+}
+code.text { line-height: 20px; }
+code:not(.text) { background-color: #f8dee1; padding: 2px; font-size: inherit; }
 
 /* footer bar */
 #thimble {
