@@ -1,57 +1,68 @@
 ---
 layout: page
 title: Resume
-updated: 2012-06-12
+updated: 2013-02-26 07:36
 source: https://github.com/liliff/resume/blob/master/resume.md
 ---
+<style type="text/css">
+p { text-indent: 0!important; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+</style>
 # Musee Ullah
 
 <milkteafuzz@gmail.com>  
 <http://milkteafuzz.com>  
-Austin, TX  
-+14086869736  
+Chicago, IL 60608  
++1 408 686 9736  
 
-## Overview
+## Objective
 
-I am a 20 year old systems administrator and server firefighter aspiring to 
-become both a developer and administrator. I learn very quickly in practice and am 
-not afraid to take on new ventures. I enjoy what I do and hope to someday create 
-and maintain world-changing applications.
+An entry-level position in systems administration or software development.
 
 ## Work Experience
 
-### [HostGator.Com, LLC][], Austin, TX
+### [HostGator.Com, LLC](http://hostgator.com) - Austin, TX
 
-#### Systems Administrator - June 2011 to present
+#### Systems Administrator - June 2011 to July 2012
 
-Resolved hundreds of issues per week through a support ticket system, including:  
-- PHP/MySQL/Rails/website/application errors, issues  
-- Backups and restorations  
-- Reboot triage and server tuning (MySQL and Apache particularly)  
-- Software upgrades and installations (Apache/PHP modules, Redmine, phpBB, etc.)  
-Also filed internal bug reports and wrote documentation for our support 
-knowledgebase and internal wikis.
+* Resolved hundreds of web hosting-related issues per week through a support ticket system.  
+* Filed bug reports and wrote wiki documentation internally.
 
-**Highlight**: I was employee of the month for November 2011 (out of ~120 admins).
+#### Systems Monitoring - December 2011 to July 2012
 
-#### Systems Monitoring - December 2011 to present
-
-I proactively monitor the shared server portion of our farm (>4500 servers), as
-part of a team (of 1-2 others usually). My typical day consists of the following:  
-- Severe load issues, immediate response and triage, gathering data and acting on it (ties into below)  
-- User abuse issues, mostly site performance related, some spam and miscellaneous abuse  
-- Server health, including disk space/performance issues, filesystem checks, general server happiness, etc.  
-- Network/service uptime, resolving UDP/SYN floods, Slowloris/(D)DoS, broken configurations, etc.  
-- Individual site performance reviews, and keeping sessions open on problem servers all night.  
-I also write [public announcements][] on our [network status forums][] 
+* Proactively monitored >4500 servers, using Zabbix, in a small team for 
+abnormal load, user abuse, hardware health, and network connectivity/attacks.  
+* Wrote [public announcements](http://forums.hostgator.com/search.php?do=finduser&u=126179) 
+on our [network status forums](http://forums.hostgator.com/network-status-f14.html) 
 for extended downtime issues.
 
-**Highlight**: I was an important asset in migrating our shared/reseller 
-servers from 32- to 64-bit.
+## Volunteer Experience
+
+### [Commie Subs](http://commiesubs.com) - Remote
+
+#### Developer - June 2012 -- present
+
+* Wrote a showtime and volunteer tracking application using the [Slim Framework](http://slimframework.com).  
+* I write scripts and applications as needed to help everyone's productivity.
+
+### [Knights of Reason](http://knightsofreason.net) - Remote
+
+#### Moderator/System Administrator - March 2008 -- present
+
+* I moderate(d) the KoRx game servers and KoR forums as well as co-manage the server.
+
+### [The Bike Project of Urbana-Champaign](http://thebikeproject.org) - Urbana, IL
+
+#### Bike Mechanic/Technologist - August 2010 to February 2011
+
+* Assisted visitors with bicycle repair/building, repurposed old laptops 
+for use at the shops, and managed membership information.
 
 ## Projects
 
-### [ZMonitor][]
+### [ZMonitor](https://github.com/liliff/zmonitor)
 
 Console client for the Zabbix monitoring suite, developed in Ruby. It 
 interfaces with the Zabbix API using JSON for gathering current active 
@@ -61,28 +72,17 @@ output to other applications.
 
 ## Skills
 
-**OS/Distros:** CentOS, Arch Linux, Gentoo Linux, Fedora, Ubuntu\*, WinXP  
-**Scripting:** Bash, Ruby  
-**Markup:** Markdown, (X)HTML (incl. HTML5), CSS3, YAML, LaTeX  
-**Programming:** PHP, Ruby  
-**HTTP:** Lighttpd, Apache, nginx\*, Mongrel  
-**Database:** MySQL, PostgreSQL\*  
-**Mail:** Exim, Dovecot  
-**Monitoring:** Zabbix, sysstat, IPMI  
-**Network:** tcpdump/ngrep, iptables  
-**Data/FS:** RAID (3ware, Adaptec, MegaRAID)\*, LVM2, FUSE, rsync, testdisk  
-**Version Control:** Git\*, Subversion\*  
-**Package Managers:** portage, pacman, yum/rpm  
-**Virtualisation:** Virtuozzo\*, VirtualBox, TightVNC  
-**Miscellaneous:** cPanel/WHM, LAMP, GCC/Compiling software, BIND, Jekyll  
-*&#42; indicates partial understanding and ability to set-up/troubleshoot, and that it is a skill in progress*
+**OS/Distros:** CentOS, Arch Linux, Gentoo Linux, Debian, Windows XP  
+**Code:** Bash, PHP, Ruby, Javascript  
+**Markup:** Markdown, HTML5, CSS3, YAML, LaTeX, JSON  
+**HTTP:** Lighttpd, Apache, nginx  
+**Database:** MySQL, Redis  
+**Monitoring:** Zabbix, sysstat, IPMI, tcpdump/ngrep, iptables  
+**Package Managers:** portage, pacman, yum/rpm, apt  
+**Miscellaneous:** cPanel/WHM, Git, LAMP, Compilation, Jekyll  
 
 ## Education
 
-**University of Illinois at Urbana-Champaign:** Completed a semester as an East Asian Languages major, 
-with a 4.0 GPA in Japanese.
+### University of Illinois at Urbana-Champaign - 2010 -- 2011
 
-[HostGator.Com, LLC]: http://www.hostgator.com
-[public announcements]: http://forums.hostgator.com/search.php?do=finduser&u=126179
-[network status forums]: http://forums.hostgator.com/network-status-f14.html
-[ZMonitor]: https://github.com/liliff/zmonitor
+Completed a semester as an East Asian Languages major, with a 4.0 GPA in Japanese.
