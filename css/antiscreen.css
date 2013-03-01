@@ -1,13 +1,13 @@
 body { background: #373737}
 /* drop-down menu bad */
 #string { position: relative; }
-#string > section { height: auto; }
+#string > section { height: auto; margin-right: 180px; }
 #closet { display: inline-block; padding: 0; }
-#closet > *:first-child { margin-right: 200px; display: block; }
+#closet > *:first-child { display: block; }
 #closet > nav { display: table-cell; padding: 0; }
 .links { width: auto; }
 .links h2, .links li { text-align: center; }
-.links li { width: 32%; font-size: 1.3em; }
+.links li { width: 32%; }
 #door span { display: none; }
 #door { font-size: 1.3em; text-align: center; }
 .metadata { padding: 6px 12px 0; }
@@ -16,8 +16,9 @@ body { background: #373737}
 #twine { position: relative; background: white; top: 0; bottom: 3em; }
 .post article { margin-left: 0; }
 .entry, .archive { border-radius: 0; box-shadow: none; }
-div.highlight { border-radius: 0; }
-
+.entry .metadata, div.highlight { border-radius: 0; }
+.entry img { max-width: 640px; }
+ 
 /* footer bar */
 #thimble { position: relative; }
 #thimble a { font-size: 1.2em; }
