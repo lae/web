@@ -1,0 +1,26 @@
+/* drop-down menu bad */
+#string {
+	width: 100%;
+	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
+	position: relative;
+}
+#string > section { height: auto; }
+#closet { width: auto; display: inline-block; padding: 0; }
+#closet > *:first-child { margin-right: 180px; display: block; padding: 0; min-width: auto; }
+#closet > nav { display: table-cell; padding: 0; }
+.links { width: auto; }
+.links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
+.links li {
+	width: 32%;
+	font-size: 1.1em;
+}
+.links li a {
+	color: inherit;
+	padding: 0 0.25em 0.1em;
+	display: block;
+}
+.links li a:hover {
+	background: #373737;
+	color: #dfdfdf;
+	text-decoration: none;
+}
