@@ -1,26 +1,21 @@
+body { background: #373737}
 /* drop-down menu bad */
-#string {
-	width: 100%;
-	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
-	position: relative;
-}
+#string { position: relative; }
 #string > section { height: auto; }
-#closet { width: auto; display: inline-block; padding: 0; }
-#closet > *:first-child { margin-right: 180px; display: block; padding: 0; min-width: auto; }
+#closet { display: inline-block; padding: 0; }
+#closet > *:first-child { margin-right: 200px; display: block; }
 #closet > nav { display: table-cell; padding: 0; }
 .links { width: auto; }
-.links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
-.links li {
-	width: 32%;
-	font-size: 1.1em;
-}
-.links li a {
-	color: inherit;
-	padding: 0 0.25em 0.1em;
-	display: block;
-}
-.links li a:hover {
-	background: #373737;
-	color: #dfdfdf;
-	text-decoration: none;
-}
+.links h2, .links li { text-align: center; }
+.links li { width: 32%; font-size: 1.3em; }
+#door span { display: none; }
+#door { font-size: 1.3em; text-align: center; }
+.metadata { padding: 6px 12px 0; }
+
+/* main content body */
+#twine { position: relative; background: white; top: 0; bottom: 3em; }
+.post article { margin-left: 0; }
+
+/* footer bar */
+#thimble { position: relative; }
+#thimble a { font-size: 1.2em; }
