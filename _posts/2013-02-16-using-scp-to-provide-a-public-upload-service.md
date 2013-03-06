@@ -111,12 +111,18 @@ duration (in other words, it's not difficult to write a `while true` loop
 that runs scp every minute on a randomly generated file). Since SCP doesn't 
 even pass the IP of the uploader, you can't deny requests to certain IPs 
 (well, I suppose you could parse `netstat`, but that doesn't seem like 
-a reliable, effective method).  
+a reliable, effective method).*  
 <br />
 
 In short, I would only use this to provide a service to friends and others 
 I can trust not to abuse it. If either of those two problems have a solution 
 I'm not aware about, I'm open to suggestions (and new knowledge, of course).
 
+* (update 5 Mar) I just realised a week ago that SSH actually does pass the 
+[SSH_CONNECTION and SSH_CLIENT][] environment variables containing the 
+sender's IP, so one should be able to track uploads via IP within the script 
+easily. I'll see what I can do about the other issue.
+
 [a public upload site using SSH]: {% post_url 2012-06-25-kyoto.maidlab.jp %}
 [data store]: http://redis.io
+[SSH_CONNECTION and SSH_CLIENT]: http://en.wikibooks.org/wiki/OpenSSH/Client_Applications#ssh_client_environment_variables
