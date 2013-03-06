@@ -21,6 +21,9 @@ paginate_path:  j/p/:num
 category_dir: /j/
 category_title_prefix: ''
 
+redcarpet:
+    extensions: ["autolink"]
+
 homelinks:
     - title: resume
       uri: resume
