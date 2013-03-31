@@ -2,7 +2,7 @@
 layout: post
 title: Happy π Day!
 date: 2013-03-14 22:40
-categories: personal
+categories: [personal, projects]
 ---
 And there you have it.
 

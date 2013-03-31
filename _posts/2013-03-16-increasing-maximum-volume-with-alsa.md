@@ -6,7 +6,7 @@ categories: desktop
 ---
 Since I don't have a set of monitors for my desktop, I use a pair of headphones 
 often as speakers for audio. This setup usually is insufferable because of low 
-audio, but mplayer has a "softvol" plugin that lets you increase your sound 
+audio, though mplayer has a "softvol" plugin that lets you increase your sound 
 output's decibel level - and since I hardly needed sound for anything other than 
 music or video, this solution worked perfectly (of course, for anything else I 
 could put on my headphones).
