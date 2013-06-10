@@ -69,7 +69,7 @@ p { text-align: justify; }
 /* main content body */
 #twine {
 	position: absolute;
-	top: 1.6em;
+	top: 2.3em; /* 1.6em without the "for-hire" bar */
 	bottom: 1.6em;
 	overflow: auto;
 	width: 100%;

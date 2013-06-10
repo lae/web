@@ -82,12 +82,12 @@ plaintext output for piping or copying.
 ## Skills
 
 **OS/Distros:** CentOS, Arch Linux, Gentoo Linux, Debian, Windows XP  
-**Code:** Bash, PHP, Ruby, Javascript  
-**Markup:** Markdown, HTML5, CSS3, YAML, LaTeX, JSON  
+**Code:** Bash; Slight experience with PHP, Ruby, Python and Javascript  
+**Markup:** Markdown, HTML, CSS, YAML, LaTeX, JSON  
 **HTTP:** Lighttpd, Apache, nginx  
-**Database:** MySQL, Redis  
+**Database:** MySQL, Redis, MongoDB  
 **Monitoring:** Zabbix, sysstat, IPMI, tcpdump/ngrep, iptables  
-**Package Managers:** portage, pacman, yum/rpm, apt  
+**Package Managers:** portage, pacman, apt  
 **Miscellaneous:** cPanel/WHM, Git, LAMP, Compilation, Jekyll
 
 ## Education
