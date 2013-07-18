@@ -11,7 +11,7 @@ the promotional video of [言の葉の庭][] (The Garden of Words). It's a new f
 directed by Makoto Shinkai scheduled to air in theaters (Japan only, though) 
 on 31 May. Feel free to use this as your wallpaper.
 
-![Route 20 illustration in 言の葉の庭](http://kyoto.maidlab.jp/p/route20.jpg)
+![Route 20 illustration in 言の葉の庭](http://milk.tea.jp/p/route20.jpg)
 
 In other news, I open-sourced my [Showtimes][] app a few weeks ago. 
 You can see it in action at [Commie Subs][].
