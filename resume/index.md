@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-updated: 2013-03-31 02:55
+updated: 2014-01-02 09:26
 source: https://github.com/liliff/resume/blob/master/resume.md
 ---
 <style type="text/css">
@@ -13,21 +13,29 @@ h3 { font-size: 1.2em; }
 # Musee Ullah
 
 <milkteafuzz@gmail.com>  
-<http://milkteafuzz.com>  
+<http://milk.tea.jp>  
 Chicago, IL 60608  
 +1 408 686 9736  
 
-## Objective
+## objective
 
-An entry-level position in systems administration or software development.
+Entry-level position in sysadmin/devops.
 
-## Employment
+## employment
+
+### [Sleepy Giant Entertainment](http://sleepygiant.com) - Chicago, IL
+
+#### Systems Engineer - July 2013 and ongoing
+
+- Monitored game servers for outages, issues  
+- Introduced to Chef and various devops workflow tools  
+- Created a few internal scripts/tools, Dash for instance  
 
 ### [HostGator.Com, LLC](http://hostgator.com) - Austin, TX
 
 #### Systems Administrator - June 2011 to July 2012
 
-* Resolved hundreds of Linux-related issues per week through a support ticket system, including:  
+* Generally excelled at being a tech support monkey, dealing with things like:
   - PHP/MySQL/Rails/website/application errors and issues  
   - Backups and restorations, using customer provided tarballs or rsync from NAS backup appliances  
   - Reboot triage and server tuning (particularly MySQL/Percona and Apache)  
@@ -47,48 +55,28 @@ on HG's [network status forums](http://forums.hostgator.com/network-status-f14.h
 for extended downtime issues.  
 * Assisted a Level 3 administrator in migrating the farm from 32bit to 64bit.
 
-## Volunteering
+## paid gigs
 
-### [Commie Subs](http://commiesubs.com) - Remote
+* [**batee.com**](http://batee.com) - site redesign using bootstrap (by request); uses jekyll for site generation
 
-#### Developer - June 2012 -- present
+## volunteer work
 
-* Wrote a showtime and volunteer tracking application using the [Slim Framework](http://slimframework.com).  
-* I write scripts and applications that let volunteers be a little more lazy.
+* [**Knights of Reason**](http://knightsofreason.net) - primary contact for technical issues, server owner/co-admin, forum moderator. ([server documentation](https://wiki.milkteafuzz.com))
+* [**The Bike Project of Urbana-Champaign**](http://thebikeproject.org) (Urbana, IL, 8/2010-2/2011) - bike mechanic and technologist, e.g. repurposed old laptops with Debian for use at the shop.
 
-### [Knights of Reason](http://knightsofreason.net) - Remote
+## projects / interesting things
 
-#### Moderator/System Administrator - March 2008 -- present
+* [**ZMonitor**](https://github.com/liliff/zmonitor) - cli dashboard for zabbix written in ruby
+* [**Wagnaria**](https://github.com/liliff/wagnaria) - fansubbing organisation tool written in python and angularjs ([copy of it in production](https://c.milkteafuzz.com/index.html))
+* [**IP Lookup**](http://ip.milk.tea.jp) - single page app written in angularjs to map a geolocated IP
+* **Dash** - ruby/rack dashboard for nagios with angularjs frontend
 
-* I moderate(d) the KoRx game servers and KoR community and organize events.  
-* I co-manage and maintain documentation for the server and am the primary contact for technical issues.
+## a brief list of things I'm familiar with/prefer working with
 
-### [The Bike Project of Urbana-Champaign](http://thebikeproject.org) - Urbana, IL
-
-#### Bike Mechanic/Technologist - August 2010 to February 2011
-
-* Repurposed old laptops with Debian for use at the shops, and managed membership data.
-
-## Projects
-
-### [ZMonitor](https://github.com/liliff/zmonitor)
-
-Terminal dashboard developed in Ruby for the Zabbix monitoring suite. 
-Configured in YAML, it uses JSON to retrieve active alerts and answer 
-them with the Zabbix API. Known for mass pattern-based (using regex) 
-acknowledgement (useful during network failures) and alternative 
-plaintext output for piping or copying.
-
-## Skills
-
-**OS/Distros:** CentOS, Arch Linux, Gentoo Linux, Debian, Windows XP  
-**Code:** Bash; Slight experience with PHP, Ruby, Python and Javascript  
-**Markup:** Markdown, HTML, CSS, YAML, LaTeX, JSON  
-**HTTP:** Lighttpd, Apache, nginx  
-**Database:** MySQL, Redis, MongoDB  
-**Monitoring:** Zabbix, sysstat, IPMI, tcpdump/ngrep, iptables  
-**Package Managers:** portage, pacman, apt  
-**Miscellaneous:** cPanel/WHM, Git, LAMP, Compilation, Jekyll
+**distros**: arch linux, centos, debian  
+**lang**: bash, ruby, python; markdown, json  
+**apps**: nginx, mysql, mongodb, etherpad, chef  
+**workflow**: git, vim, i3wm, remmina, vagrant, did I mention bash (scripts)?  
 
 ## Education
 
