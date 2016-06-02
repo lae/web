@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Resume
-updated: 2014-01-02 09:26
-source: https://github.com/liliff/resume/blob/master/resume.md
+updated: 2016-06-02 08:11
+source: https://github.com/lae/resume
 ---
 <style type="text/css">
 p { text-indent: 0!important; }
@@ -12,77 +12,101 @@ h3 { font-size: 1.2em; }
 </style>
 # Musee Ullah
 
-<milkteafuzz@gmail.com>  
-<http://milk.tea.jp>  
-Chicago, IL 60608  
-+1 408 686 9736  
+<arbeiter@lae.is>  
+<https://lae.is>  
+[Github](http://www.github.com/lae)  
+San Jose, CA
 
-## objective
+## Objective
 
-Entry-level position in sysadmin/devops.
+A senior systems administration position with a heavy focus on automation.
 
-## employment
+## Employment
+
+### [FireEye, Inc.](https://fireeye.com) - Milpitas, CA
+
+A cybersecurity company with a renown background in malware detection.
+
+#### Devops Engineer - March 2015, ongoing
+
+- provided infrastructure support for FireEye Labs (R&D), which involved 
+  leading the upbringing of several internal projects to completion in 
+  collaboration with other teams.
+- implemented various services and processes for automating Linux systems in 
+  the various stages of their lifecycle, mainly via ansible but including other 
+  not-yet-public automation software.
+- worked with several distributed systems, including but not limited to Ceph, 
+  Cassandra, and internal FireEye systems.
+- quite a bit more to be honest - to be filled/modified later.
 
 ### [Sleepy Giant Entertainment](http://sleepygiant.com) - Chicago, IL
 
-#### Systems Engineer - July 2013 and ongoing
+A game infrastructure development company.
 
-- Monitored game servers for outages, issues  
-- Introduced to Chef and various devops workflow tools  
-- Created a few internal scripts/tools, Dash for instance  
+#### Systems Engineer - July 2013 to September 2014
+
+- orchestrated servers with Chef and other automation utilities
+- worked with several Amazon Web Services, including RDS, VPC, Beanstalk
+- replaced part of SG's development cycle with Docker (Jenkins CI)
+- wrote various scripts in Python, Ruby and Bash
+- was responsible for the security audit after the Heartbleed PSA
 
 ### [HostGator.Com, LLC](http://hostgator.com) - Austin, TX
 
-#### Systems Administrator - June 2011 to July 2012
-
-* Generally excelled at being a tech support monkey, dealing with things like:
-  - PHP/MySQL/Rails/website/application errors and issues  
-  - Backups and restorations, using customer provided tarballs or rsync from NAS backup appliances  
-  - Reboot triage and server tuning (particularly MySQL/Percona and Apache)  
-  - Software upgrades and installations (Apache/PHP modules, Redmine, phpBB, etc.)  
-* Filed internal bug reports and wrote documentation for HG's wikis and knowledgebase.
+A shared web hosting company who also offers dedicated servers/VMs.
 
 #### Systems Monitoring - December 2011 to July 2012
 
-* Monitored >4500 servers, using Zabbix (and ZMonitor), in a small team to maintain quality service.  
-* A typical week consisted of:  
-  - Reducing abnormal load and user abuse (rogue scripts, spam, hacked accounts)  
-  - Checking and reporting hardware health (disk usage, filesystem status, drive swaps, RAID health)  
-  - Restoring network connectivity and deflecting attacks (UDP/SYN floods, Slowloris)  
-  - And correcting broken configurations (network, services).  
-* Wrote [public announcements](http://forums.hostgator.com/search.php?do=finduser&u=126179) 
-on HG's [network status forums](http://forums.hostgator.com/network-status-f14.html) 
-for extended downtime issues.  
-* Assisted a Level 3 administrator in migrating the farm from 32bit to 64bit.
+- monitored >4500 machines remotely (SoftLayer) using Zabbix/ZMonitor
+- dealt with user abuse, compromised clients, broken configurations, and other resource usage issues
+- handled network abuse/issues by either firewall or escalating to SL (UDP/SYN floods, Slowloris)
+- sole assistant from the monitoring team during HG's architecture migration (32->64bit)
+- wrote [public announcements](http://forums.hostgator.com/search.php?do=finduser&u=126179) 
+  on the [network status forums](http://forums.hostgator.com/network-status-f14.html) 
+  for extended downtime issues.  
 
-## paid gigs
+#### Systems Administrator - June 2011 to July 2012
 
-* [**batee.com**](http://batee.com) - site redesign using bootstrap (by request); uses jekyll for site generation
+- was primarily help desk support, handling website/database/application errors and
+  issues, backups/restorations, triage, software upgrades and installations.
+- Filed internal bug reports and wrote documentation for company wikis and knowledgebase.
 
-## volunteer work
+### Contracted Positions
 
-* [**Knights of Reason**](http://knightsofreason.net) - primary contact for technical issues, server owner/co-admin, forum moderator. ([server documentation](https://wiki.milkteafuzz.com))
-* [**The Bike Project of Urbana-Champaign**](http://thebikeproject.org) (Urbana, IL, 8/2010-2/2011) - bike mechanic and technologist, e.g. repurposed old laptops with Debian for use at the shop.
+* [**batee.com**](http://batee.com) - site redesign using Bootstrap (by 
+  request); uses Jekyll for site generation
 
-## projects / interesting things
+## Volunteering
 
-* [**ZMonitor**](https://github.com/liliff/zmonitor) - cli dashboard for zabbix written in ruby
-* [**Wagnaria**](https://github.com/liliff/wagnaria) - fansubbing organisation tool written in python and angularjs ([copy of it in production](https://c.milkteafuzz.com/index.html))
-* [**IP Lookup**](http://ip.milk.tea.jp) - single page app written in angularjs to map a geolocated IP
-* **Dash** - ruby/rack dashboard for nagios with angularjs frontend
+* [**Simple Mona**](http://simplemona.com) - sole administrator of this pool 
+  for the Monacoin cryptocurrency - 
+  [development halted](https://github.com/liliff/simplemona)  
+  - involved administrating a RabbitMQ cluster, developing in Python (Flask),
+    and querying in Postgres  
+  - i18n support, added Japanese translation (by me and a couple native speakers)  
+* [**Knights of Reason**](http://knightsofreason.net) - primary contact for 
+  technical issues, server owner/co-admin, forum moderator. 
+  ([server documentation](https://wiki.milkteafuzz.com))  
+* [**The Bike Project of Urbana-Champaign**](http://thebikeproject.org) 
+  (Urbana, IL, 8/2010-2/2011) - bike mechanic and technologist, e.g. repurposed 
+  old laptops with Debian for use at the shop.  
 
-## a brief list of things I'm familiar with/prefer working with
+## Projects / One-Offs
 
-**distros**: arch linux, centos, debian  
-**lang**: bash, ruby, python; markdown, json  
-**apps**: nginx, mysql, mongodb, etherpad, chef  
-**workflow**: git, vim, i3wm, remmina, vagrant, did I mention bash (scripts)?  
+* [**ZMonitor**](https://github.com/lae/zmonitor) - cli dashboard for Zabbix 
+  written in Ruby.  
+* [**Wagnaria**](https://github.com/lae/wagnaria) - fansubbing organisation 
+  tool written in Python and Angularjs 
+  ([copy of it in production](https://c.milkteafuzz.com/)).  
+
+## Familiarities / Preferences
+
+**distros**: arch linux, centos, debian, coreos, ubuntu (16+)  
+**lang**: bash, python, ruby, markdown, json  
+**apps**: nginx, postgresql, mysql, etherpad, chef  
+**workflow**: ansible, git, vim, i3wm, remmina, vagrant, bash (x2)
 
 ## Education
 
-### University of Illinois at Urbana-Champaign - 2010 -- 2011
-
-## Links
-
-**Github:** <http://www.github.com/liliff>  
-**LinkedIn:** <http://www.linkedin.com/in/musee>
+**University of Illinois at Urbana-Champaign** - 2010 -- 2011 - East Asian 
+  Languages and Cultures
