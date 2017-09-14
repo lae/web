@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-updated: 2016-06-02 08:11
+updated: 2016-10-10 19:56
 source: https://github.com/lae/resume
 ---
 <style type="text/css">
@@ -27,7 +27,7 @@ A senior systems administration position with a heavy focus on automation.
 
 A cybersecurity company with a renown background in malware detection.
 
-#### Devops Engineer - March 2015, ongoing
+#### Research Infrastructure Engineer - March 2015, ongoing
 
 - provided infrastructure support for FireEye Labs (R&D), which involved 
   leading the upbringing of several internal projects to completion in 

@@ -150,6 +150,7 @@ code:not(.text) { background-color: #f8dee1; padding: 2px; font-size: inherit; }
 	color: #dfdfdf;
 	font-family: "Open Sans", sans-serif;
 	display: table;
+    table-layout: fixed;
 }
 #thimble span { display: table-cell; padding: 0 1em; }
 #thimble span:last-child { text-align: right; }

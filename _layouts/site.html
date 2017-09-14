@@ -29,7 +29,7 @@
                 <strong>Tags:</strong> {{ page.tags | array_to_sentence_string }}{% endif %}{% else %}
             <div class="about">
                 <img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png" alt="liliff's gravatar" class="gravatar" />
-                <p><abbr title="Welcome!">いらしゃいませ!</abbr> I'm Musee, often referred to as lae on the interwebs. I'm an entry-level system administrator and developer who mostly just hacks things here and there nowadays. I currently co-admin the server for the <a href="http://knightsofreason.net">Knights of Reason</a> community and develop applications for <a href="http://commiesubs.com">Commie Subs</a>.</p>{% endif %}
+                <p><abbr title="Welcome!">いらっしゃいませ！</abbr> I'm Musee, often referred to as lae on the interwebs. I'm an infrastructure engineer at FireEye by day and sysadmin/developer by night who mostly just hacks things here and there nowadays. I deal a lot with Ansible as well.</p>{% endif %}
             </div>
             <nav class="links">
                 <h2>navigation</h2>
@@ -55,7 +55,7 @@
             <div></div>
         </div>
     </section>
-    <header id="door"><label for="knob"><span><em>▼</em><em>▲</em></span>milk tea fuzz</label></header>
+    <header id="door" title="Click here for navigation controls and extra information"><label for="knob"><span><em>▼</em><em>▲</em></span>milk tea fuzz</label></header>
     <!--div style="display: block; width: 100%; background: #efef1f; padding: 2px 8px; font-size: 0.8em; font-family: sans-serif;">Currently for-hire. Please see my <a href="/resume">resume</a> and the <a href="/contact">contact page</a>.</div-->
 </section>
 <section id="twine">
@@ -68,6 +68,7 @@
         &laquo;&nbsp;<a href="/j/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
         &laquo;&nbsp;<script>document.write('<a href="'+document.referrer+'">where you were before</a>');</script>{% endif %}
     </span>
+    <span style="text-align: center;"><a href="/j" title="index page">home</a></span>
     <span>{% if page.next.url %}
         <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;{% elsif paginator.next_page and page.url != "/archive/index.html" %}
         <a href="/j/p/{{ paginator.next_page }}/" rel="next" title="next page">older leaves {{ page.id }}</a>&nbsp;&raquo;{% endif %}
