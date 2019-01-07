@@ -112,6 +112,7 @@ p { text-align: justify; }
 .entry .metadata a { color: #afafaf; }
 .post {
 	width: 90%;
+	max-width: 1200px;
 	margin: 1em auto;
 }
 .post aside:first-child { text-align: center; color: #878787; }
