@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ site.title }}</title>
+    <title>{{ config.title }}</title>
     <meta charset="utf-8" />
     <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Cardo);
@@ -17,9 +17,11 @@ a:hover { text-decoration: underline; color: #fff; }
     </style>
 </head>
 <body>
-    <header><p>milk tea fuzz</p></header>
+    <header><p>{{ config.title }}</p></header>
     <nav>
-        <ul>{{ content }}        </ul>
+        <ul>
+{% for link in config.extra.homelinks %}
+            <li><a href="{{ link.uri }}">{{ link.title }}</a></li>{% endfor %}        </ul>
     </nav>
 <!-- Piwik --> 
 <script type="text/javascript">
