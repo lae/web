@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% set section = get_section(path="logs/_index.md") %}
+<section class="archive">
+    <header><h2>archive</h2></header>
+    <nav>
+        <ul>{% for post in section.pages %}
+            <li>{ {{ post.date | date(format="%Y.%m.%d") }} } <a href="{{ post.permalink }}">{{ post.title }}</a></li>{% endfor %}
+        </ul>
+    </nav>
+</section>
+{% endblock content %}

@@ -1,0 +1,41 @@
+base_url = "https://lae.is"
+
+title = "milk tea fuzz"
+description = "lae's journal"
+default_language = "en"
+
+highlight_code = true
+highlight_theme = "charcoal"
+
+taxonomies = [
+    {name = "categories", paginate_by = 5}
+]
+
+compile_sass = true
+
+build_search_index = false
+check_external_links = false
+
+ignored_content = []
+extra_syntaxes = []
+
+[translations]
+
+[extra]
+author = "Musee Ullah"
+
+[[extra.homelinks]]
+title = "resume"
+uri = "resume"
+
+[[extra.homelinks]]
+title = "journal"
+uri = "logs"
+
+[[extra.homelinks]]
+title = "git"
+uri = "https://github.com/lae"
+
+[[extra.homelinks]]
+title = "contact"
+uri = "contact"
