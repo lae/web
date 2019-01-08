@@ -20,7 +20,7 @@ You can see it in action at [Commie Subs][].
 I'll just sit here and continue to stare at the Raspberry Pi I recieved last 
 year but still have yet to use for anything.
 
-[Showtimes]: http://github.com/liliff/showtimes
+[Showtimes]: http://github.com/lae/showtimes
 [Commie Subs]: http://commiesubs.com/shows
 [Japan National Route 20]: http://en.wikipedia.org/wiki/Japan_National_Route_20
 [言の葉の庭]: http://kotonohanoniwa.jp/

@@ -39,5 +39,5 @@ site, so I might do that sometime soon. For now though, time to sleep. Possibly.
 [NearlyFreeSpeech]: http://nearlyfreespeech.net
 [survival minecraft server]: http://forums.knightsofreason.net/viewtopic.php?f=140&t=7634
 [Knights of Reason]: http://knightsofreason.net
-[Zmonitor 1.0.11]: https://github.com/liliff/zmonitor/tree/e588eb8d71406a05df49d2879e60b8a56edd3539
+[Zmonitor 1.0.11]: https://github.com/lae/zmonitor/tree/e588eb8d71406a05df49d2879e60b8a56edd3539
 [rubygems.org]: http://rubygems.org

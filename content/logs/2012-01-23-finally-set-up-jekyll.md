@@ -20,4 +20,4 @@ site on the internet yet, so hopefully this will come in handy.
 Update: Just pushed an initial commit for [this site's source at Github][].
 
 [Jekyll]: https://github.com/mojombo/jekyll
-[this site's source at GitHub]: https://github.com/liliff/web
+[this site's source at GitHub]: https://github.com/lae/web

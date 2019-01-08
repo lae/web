@@ -25,5 +25,5 @@ I think I'm going to read another Ruby book now, specifically Zed A. Shaw's
 few years since I touched why's poignant guide to ruby (I happen to have a copy 
 I printed out, too, it seems - I might go over it, too).
 
-[Project Himari]: https://github.com/liliff/project-himari
+[Project Himari]: https://github.com/lae/project-himari
 [Learn Ruby The Hard Way]: http://ruby.learncodethehardway.org
