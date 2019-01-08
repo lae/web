@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% for post in paginator.pages %}
+<section class="entry">
+    <header><h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2></header>
+    <article>
+{{ post.content | safe }}
+    </article>
+    <aside class="metadata"><span>{{ post.date | date(format="%d %B %Y") }}</span><span>{# if post.categories.size > 0 %}Filed under {{ post.categories | category_links }}{% endif #}(categories WIP)</span></aside>
+</section>
+{% endfor %}
+{% endblock content %}

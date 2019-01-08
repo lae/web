@@ -28,7 +28,7 @@ uri = "resume"
 
 [[extra.homelinks]]
 title = "journal"
-uri = "j"
+uri = "logs"
 
 [[extra.homelinks]]
 title = "git"

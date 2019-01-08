@@ -1,15 +1,16 @@
----
-layout: page
-title: Resume
-updated: 2017-09-14 02:17
-source: https://github.com/lae/resume
----
++++
+title = "Resume"
+[extra]
+updated = 2017-09-14T02:17:00Z
+source = "https://github.com/lae/resume"
++++
 <style type="text/css">
 p { text-indent: 0!important; }
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em; }
 </style>
+
 # Musee Ullah
 
 <arbeiter@lae.is>  

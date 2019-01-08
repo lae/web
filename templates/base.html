@@ -13,7 +13,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@sleepingkyoto" />
     <meta name="twitter:creator" content="@sleepingkyoto" />
-    <meta name="twitter:title" content="{{ page.title }}" />
+    {#<meta name="twitter:title" content="{{ page.title }}" />#}
     <meta name="twitter:image" content="https://i.imgur.com/UXrHtVR.jpg" />
     {% endblock head %}
 </head>
@@ -29,9 +29,9 @@
             <div class="metadata">
                 <h2>metadata</h2>
                 <strong>Title:</strong> {{ page.title }}{% if page.date %}<br />
-                <strong>Created on:</strong> {{ page.date }}{% endif %}{% if page.updated %}<br />
-                <strong>Updated on:</strong> {{ page.updated }}{% endif %}{% if page.source %}<br />
-                <strong>Source:</strong> {{ page.source }}{% endif %}{# if page.categories.size > 0 %}<br />
+                <strong>Created on:</strong> {{ page.date | date(format="%F %T %Z") }}{% endif %}{% if page.extra.updated %}<br />
+                <strong>Updated on:</strong> {{ page.extra.updated | date(format="%F %T %Z") }}{% endif %}{% if page.extra.source %}<br />
+                <strong>Source:</strong> {{ page.extra.source }}{% endif %}{# if page.categories.size > 0 %}<br />
                 <strong>{% if page.categories.size == 1 %}Category{% else %}Categories{% endif %}:</strong> {% for c in page.categories %}{{ c | capitalize }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}{% if page.tags.size > 0 %}<br />
                 <strong>Tags:</strong> {{ page.tags | array_to_sentence_string }}{% endif #}{% else %}
             <div class="about">
@@ -51,12 +51,12 @@
             <nav class="links">
                 <h2>journal</h2>
                 <ul>
-                    <li><a href="/j">home</a></li>
+                    <li><a href="/logs">home</a></li>
                     <li><a href="/archive">archive</a></li>
-                    <li><a href="/j/personal">personal</a></li>
-                    <li><a href="/j/projects">projects</a></li>
-                    <li><a href="/j/code">code</a></li>
-                    <li><a href="/j/desktop">desktop</a></li>
+                    <li><a href="/logs/personal">personal</a></li>
+                    <li><a href="/logs/projects">projects</a></li>
+                    <li><a href="/logs/code">code</a></li>
+                    <li><a href="/logs/desktop">desktop</a></li>
                 </ul>
             </nav>
             <div></div>
@@ -72,14 +72,14 @@
     {% block footer %}
     <span>{% if page.previous.url %}
         &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>{% elif paginator.previous_page %}{% if paginator.previous_page == 1 %}
-        &laquo;&nbsp;<a href="/j" title="index page" rel="previous">newest leaves</a>{% else %}
-        &laquo;&nbsp;<a href="/j/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
+        &laquo;&nbsp;<a href="/logs" title="index page" rel="previous">newest leaves</a>{% else %}
+        &laquo;&nbsp;<a href="/logs/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
         &laquo;&nbsp;<script>document.write('<a href="'+document.referrer+'">where you were before</a>');</script>{% endif %}
     </span>
-    <span style="text-align: center;"><a href="/j" title="index page">home</a></span>
+    <span style="text-align: center;"><a href="/logs" title="index page">home</a></span>
     <span>{% if page.next.url %}
         <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;{% elif paginator.next_page and page.url != "/archive/index.html" %}
-        <a href="/j/p/{{ paginator.next_page }}/" rel="next" title="next page">older leaves {{ page.id }}</a>&nbsp;&raquo;{% endif %}
+        <a href="/logs/p/{{ paginator.next_page }}/" rel="next" title="next page">older leaves {{ page.id }}</a>&nbsp;&raquo;{% endif %}
     </span>
     {% endblock footer %}
 </footer>
