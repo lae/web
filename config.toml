@@ -7,7 +7,9 @@ default_language = "en"
 highlight_code = true
 highlight_theme = "charcoal"
 
-taxonomies = []
+taxonomies = [
+    {name = "categories", paginate_by = 5}
+]
 
 compile_sass = true
 

@@ -21,19 +21,15 @@
 <section id="string">
     <input type="checkbox" id="knob" />
     <section>
-        <div id="closet">{% if page.category %}
-            <div class="metadata">
-                <h2>metadata</h2>
-                <strong>Category:</strong> {{ page.category }} <br />
-                <strong>Number of Posts:</strong> {{ site.categories[page.category].size }}{% elif page.title %}
+        <div id="closet">{% if page.title %}
             <div class="metadata">
                 <h2>metadata</h2>
                 <strong>Title:</strong> {{ page.title }}{% if page.date %}<br />
                 <strong>Created on:</strong> {{ page.date | date(format="%F %T %Z") }}{% endif %}{% if page.extra.updated %}<br />
                 <strong>Updated on:</strong> {{ page.extra.updated | date(format="%F %T %Z") }}{% endif %}{% if page.extra.source %}<br />
-                <strong>Source:</strong> {{ page.extra.source }}{% endif %}{# if page.categories.size > 0 %}<br />
-                <strong>{% if page.categories.size == 1 %}Category{% else %}Categories{% endif %}:</strong> {% for c in page.categories %}{{ c | capitalize }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}{% if page.tags.size > 0 %}<br />
-                <strong>Tags:</strong> {{ page.tags | array_to_sentence_string }}{% endif #}{% else %}
+                <strong>Source:</strong> {{ page.extra.source }}{% endif %}{% if page.taxonomies.categories and page.taxonomies.categories | length > 0 %}<br />
+                <strong>{% if page.taxonomies.categories | length == 1 %}Category{% else %}Categories{% endif %}:</strong> {% for c in page.taxonomies.categories %}{{ c | capitalize }}{% if loop.last != true %}, {% endif %}{% endfor %}{% endif %}{# if page.taxonomies.tags | length > 0 %}<br />
+                <strong>Tags:</strong> {{ page.tags | join }}{% endif #}{% else %}
             <div class="about">
                 <img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png" alt="liliff's gravatar" class="gravatar" />
                 <p><abbr title="Welcome!">いらっしゃいませ！</abbr> I'm Musee, often referred to as lae on the interwebs. I'm an infrastructure engineer at FireEye by day and sysadmin/developer by night who mostly just hacks things here and there nowadays. I deal a lot with Ansible as well.</p>{% endif %}
@@ -53,10 +49,10 @@
                 <ul>
                     <li><a href="/logs">home</a></li>
                     <li><a href="/archive">archive</a></li>
-                    <li><a href="/logs/personal">personal</a></li>
-                    <li><a href="/logs/projects">projects</a></li>
-                    <li><a href="/logs/code">code</a></li>
-                    <li><a href="/logs/desktop">desktop</a></li>
+                    <li><a href="/categories/personal">personal</a></li>
+                    <li><a href="/categories/projects">projects</a></li>
+                    <li><a href="/categories/code">code</a></li>
+                    <li><a href="/categories/desktop">desktop</a></li>
                 </ul>
             </nav>
             <div></div>
@@ -66,20 +62,20 @@
     <!--div style="display: block; width: 100%; background: #efef1f; padding: 2px 8px; font-size: 0.8em; font-family: sans-serif;">Currently for-hire. Please see my <a href="/resume">resume</a> and the <a href="/contact">contact page</a>.</div-->
 </section>
 <section id="twine">
-{% block content %} {% endblock content %}
+{% block content %}{% endblock content %}
 </section>
 <footer id="thimble">
     {% block footer %}
-    <span>{% if page.previous.url %}
-        &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>{% elif paginator.previous_page %}{% if paginator.previous_page == 1 %}
-        &laquo;&nbsp;<a href="/logs" title="index page" rel="previous">newest leaves</a>{% else %}
-        &laquo;&nbsp;<a href="/logs/p/{{ paginator.previous_page }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
+    <span>{% if page.earlier.permalink %}
+        &laquo;&nbsp;<a href="{{ page.earlier.permalink }}" rel="previous" title="{{ page.earlier.title }}">{{ page.earlier.title }}</a>{% elif paginator.previous %}{% if paginator.previous == paginator.first %}
+        &laquo;&nbsp;<a href="{{ paginator.first }}" title="index page" rel="previous">newest leaves</a>{% else %}
+        &laquo;&nbsp;<a href="{{ paginator.previous }}/" rel="previous" title="previous page">newer leaves</a>{% endif %}{% else %}
         &laquo;&nbsp;<script>document.write('<a href="'+document.referrer+'">where you were before</a>');</script>{% endif %}
     </span>
     <span style="text-align: center;"><a href="/logs" title="index page">home</a></span>
-    <span>{% if page.next.url %}
-        <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;{% elif paginator.next_page and page.url != "/archive/index.html" %}
-        <a href="/logs/p/{{ paginator.next_page }}/" rel="next" title="next page">older leaves {{ page.id }}</a>&nbsp;&raquo;{% endif %}
+    <span>{% if page.later.permalink %}
+        <a href="{{ page.later.permalink }}" rel="next" title="{{ page.later.title }}">{{ page.later.title }}</a>&nbsp;&raquo;{% elif paginator.next %}
+        <a href="{{ paginator.next }}/" rel="next" title="next page">older leaves</a>&nbsp;&raquo;{% endif %}
     </span>
     {% endblock footer %}
 </footer>
