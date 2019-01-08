@@ -1,8 +1,7 @@
----
-layout: page
-title: Contact
-date: 2016-06-02
----
++++
+title = "Contact"
+date = 2016-06-02
++++
 <style type="text/css">
 ul.c { padding: 0!important; list-style-type: none; }
 .c li { list-style: none; text-indent: 2em; }
