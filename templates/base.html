@@ -2,7 +2,22 @@
 <html>
 <head>
     {% block head %}
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}</title>
+    <title>
+        {%- block title -%}
+        {{ config.title }}
+        {%- if page -%}
+            {%- if page.title -%}
+                ::{{ page.components | slice(end=page.components | length-1) | join(sep="::") }}{% if page.components | length > 1 %}/{% endif %}{{ page.title }}
+            {%- else -%}
+                ::{{ page.components | join(sep="::") }}
+            {%- endif -%}
+        {%- elif section -%}
+            ::{{ section.components | join(sep="::") }}
+        {%- elif taxonomy -%}
+            ::{{ current_path }}
+        {%- endif -%}
+        {%- endblock title -%}
+    </title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="/favicon.png" />
     <link rel="icon" href="/favicon.png" />

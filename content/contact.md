@@ -1,5 +1,4 @@
 +++
-title = "Contact"
 date = 2016-06-02
 +++
 <style type="text/css">
