@@ -33,7 +33,7 @@ Go to your cPanel (this is the only time you will need to), and create a
 database to be used for your Redmine. See ["How do I create a MySQL database..."][2] 
 for more information. You can also reference the following screenshot:
 
-![Creating a Database in cPanel](/images/rm14/create_database.png)
+![Creating a Database in cPanel](create_database.png)
 
 We'll call ours `cubecity_redmine`. Be sure to save your password, as you'll 
 need it later on.
@@ -42,7 +42,7 @@ Next, [create a subdomain][3] and point it to the `public` directory of
 where you will place your Redmine instance. We'll be using `rails_apps/redmine/public` 
 in this example:
 
-![Creating a Subdomain in cPanel](/images/rm14/create_subdomain.png)
+![Creating a Subdomain in cPanel](create_subdomain.png)
 
 Note: It is not necessary to use a subdomain - you can definitely use a 
 subdirectory or your primary domain, just be sure to make the appropriate 
@@ -57,7 +57,7 @@ Rails applications.
 Connect to your account via SSH. The following should look similar to where 
 you're at now:
 
-![A terminal after connecting via SSH](/images/rm14/emptyterminal.png)
+![A terminal after connecting via SSH](emptyterminal.png)
 
 We will now want to edit our shell's environment variables, so that it knows 
 where to find our ruby gems. You can use any text editor - we'll use `nano` 
@@ -73,7 +73,7 @@ the following variables are in your `.bash_profile`:
     export PATH=$PATH:$HOME/bin:$GEM_HOME/bin
     export RAILS_ENV=production
 
-![The contents of .bash_profile as shown in nano](/images/rm14/bash_profile.png)
+![The contents of .bash_profile as shown in nano](bash_profile.png)
 
 You can navigate the file using your arrow keys. Save it by pressing Ctrl+X 
 (by pressing Ctrl and the X key at the same time). It may ask to save your 
@@ -95,7 +95,7 @@ in `nano` as you did with `.bash_profile` above.
      - /usr/lib/ruby/gems/1.8
     rdoc: --inline-source --line-numbers
 
-![The contents of .gemrc as shown in nano](/images/rm14/gemrc.png)
+![The contents of .gemrc as shown in nano](gemrc.png)
 
 If the file is empty, type all of the above. Ensure that your `gempath` 
 and `gemhome` keys use your own username. Mine is `cubecity` in the above, 
@@ -125,7 +125,7 @@ You will then want to extract the tarball. Use the following to extract it:
 
 Your session should look similar to this before you extract the file:
 
-![Terminal prior to executing the tar command](/images/rm14/readytoextract.png)
+![Terminal prior to executing the tar command](readytoextract.png)
 
 After you've finished untarring the download, rename your extracted directory 
 to `redmine` using the `mv` command and go into that directory:
@@ -142,7 +142,7 @@ the following:
 
 Your session should now look like this:
 
-![Terminal after installing a bundle for Redmine](/images/rm14/bundleinstall.png)
+![Terminal after installing a bundle for Redmine](bundleinstall.png)
 
 Redmine's installed! Now let's finish up and configure it...
 
@@ -157,7 +157,7 @@ editing it, like below:
 Edit your configuration for the production environment with the database 
 name, user, and password you created at the beginning of this tutorial:
 
-![The contents of database.yml as shown in Nano](/images/rm14/configuredatabase.png)
+![The contents of database.yml as shown in Nano](configuredatabase.png)
 
 Press Ctrl+X to save. Now let's run our initial Rake tasks to create a secret 
 and set up your database's tables:
@@ -165,7 +165,7 @@ and set up your database's tables:
     rake generate_session_store
     rake db:migrate
 
-![Terminal before running rake db:migrate](/images/rm14/raketasks.png)
+![Terminal before running rake db:migrate](raketasks.png)
 
 Finally, we will edit our `.htaccess` so that mod_passenger can handle requests 
 for your Redmine instance:

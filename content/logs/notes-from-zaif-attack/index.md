@@ -44,7 +44,7 @@ an aggregation of the details of that event.
 * Withdrawals and deposits for the 3 affected currencies have been suspended since the evening of 17 September.
   * Withdrawals/deposits are [still possible on other coins](https://twitter.com/peperibito/status/1042724925272805376).
 
-![](/images/zaif-incident.png)
+![](zaif-incident.png)
 
 ### Itemization of damages
 
