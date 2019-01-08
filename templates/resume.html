@@ -11,7 +11,7 @@ h3 { font-size: 1.2em; }
     <article>
 
 {% set resume_data = load_data(url="https://raw.githubusercontent.com/lae/resume/master/README.md") %}
-{{ resume_data | markdown }}
+{{ resume_data | safe | markdown }}
 
     </article>
 </section>
