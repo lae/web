@@ -1,9 +1,10 @@
----
-layout: post
-title: Notes from Zaif Attack
-date: 2018-09-20 17:25
-categories: code
----
++++
+title = "Notes from Zaif Attack"
+date = 2018-09-20T17:25:00Z
+
+[taxonomies]
+categories = ["code"]
++++
 
 *The following is primarily a translation of [this blog post][].*
 

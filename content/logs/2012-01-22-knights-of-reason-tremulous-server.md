@@ -1,9 +1,10 @@
----
-layout: post
-title: Knights of Reason / Tremulous server
-date: 2012-01-22 07:30
-categories: personal
----
++++
+title = "Knights of Reason / Tremulous server"
+date = 2012-01-22T07:30:00Z
+
+[taxonomies]
+categories = ["personal"]
++++
 Per request by a old fellow KoR member, I've set up a tremulous 1.2 server at
 nia.teppel.in:30720. You should be able to connect normally with Trem's client 
 or Segfault. The server's name is KnightsOfReason.net since it seems my friend, 

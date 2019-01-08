@@ -1,9 +1,10 @@
----
-layout: post
-title: Using SCP to Provide a Public Upload Service
-date: 2013-02-16 07:54
-categories: code
----
++++
+title = "Using SCP to Provide a Public Upload Service"
+date = 2013-02-16T07:54:00Z
+
+[taxonomies]
+categories = ["code"]
++++
 Half a year ago, I wrote a poorly detailed post about setting up 
 [a public upload site using SSH][], which used the `authorized_keys` file 
 to restrict the key to an rsync command with certain flags enabled and a 
@@ -124,6 +125,6 @@ sender's IP, so one should be able to track uploads via IP within the script
 easily. I'll see what I can do about the other issue.
 
 
-[a public upload site using SSH]: {% post_url 2012-06-25-kyoto.maidlab.jp %}
+[a public upload site using SSH]: ./logs/2012-06-25-kyoto.maidlab.jp.md
 [data store]: http://redis.io
 [SSH\_CONNECTION and SSH\_CLIENT]: http://en.wikibooks.org/wiki/OpenSSH/Client_Applications#ssh_client_environment_variables

@@ -1,9 +1,10 @@
----
-layout: post
-title: Mailserver, DNS Changes and More
-date: 2012-06-25 13:32
-categories: personal projects
----
++++
+title = "Mailserver, DNS Changes and More"
+date = 2012-06-25T13:32:00Z
+
+[taxonomies]
+categories = ["personal", "projects"]
++++
 This weekend was pretty productive for me. I've set up Postfix and Dovecot 
 both on this server so now I'm serving mail from @milkteafuzz.com (primarily 
 because I wanted to send texts/email from my server itself). I've also now 
@@ -33,7 +34,7 @@ site, so I might do that sometime soon. For now though, time to sleep. Possibly.
 
 [Michael Lustfield's]: http://michael.lustfield.net
 [Irssi to SMS]: http://michael.lustfield.net/content/irssi-sms
-[my previous post]: {% post_url 2012-06-25-kyoto.maidlab.jp %}
+[my previous post]: ./logs/2012-06-25-kyoto.maidlab.jp.md
 [afraid.org's]: http://freedns.afraid.org
 [NearlyFreeSpeech]: http://nearlyfreespeech.net
 [survival minecraft server]: http://forums.knightsofreason.net/viewtopic.php?f=140&t=7634

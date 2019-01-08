@@ -1,9 +1,10 @@
----
-layout: post
-title: Increasing Maximum Volume with ALSA
-date: 2013-03-16 11:21
-categories: desktop
----
++++
+title = "Increasing Maximum Volume with ALSA"
+date = 2013-03-16T11:21:00Z
+
+[taxonomies]
+categories = ["desktop"]
++++
 Since I don't have a set of monitors for my desktop, I use a pair of headphones 
 often as speakers for audio. This setup usually is insufferable because of low 
 audio, though mplayer has a "softvol" plugin that lets you increase your sound 

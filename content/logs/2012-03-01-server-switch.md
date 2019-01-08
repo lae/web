@@ -1,9 +1,10 @@
----
-layout: post
-title: Server Switch!
-date: 2012-03-01 09:32
-categories: personal
----
++++
+title = "Server Switch!"
+date = 2012-03-01T09:32:00Z
+
+[taxonomies]
+categories = ["personal"]
++++
 So, yesterday I had my first dedicated server provisioned, and I've been tinkering 
 with it since then, getting it configured as nicely as I can, with LVM and all sorts 
 of funky things.

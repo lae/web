@@ -1,9 +1,10 @@
----
-layout: post
-title: Postler and it's "INBOX is locked" message
-date: 2012-01-29 01:53
-categories: desktop
----
++++
+title = "Postler and it's \"INBOX is locked\" message"
+date = 2012-01-29T01:53:00Z
+
+[taxonomies]
+categories = ["desktop"]
++++
 I'm sure some of you have had Postler stop being able to receive messages from 
 your email account one day or another, but have had no idea why.
 

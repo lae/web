@@ -1,9 +1,10 @@
----
-layout: post
-title: A Practical Behind the Scenes, Running Mastodon at Scale (Translation)
-date: 2017-04-19 09:40
-categories: code
----
++++
+title = "A Practical Behind the Scenes, Running Mastodon at Scale (Translation)"
+date = 2017-04-19T09:40:00Z
+
+[taxonomies]
+categories = ["code"]
++++
 
 *The following is a translation of [this pixiv inside article][].*
 

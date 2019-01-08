@@ -1,10 +1,11 @@
----
-layout: post
-title: Installing Redmine 1.4 on cPanel Shared Hosting
-date: 2013-02-26 16:35
-categories: code
-tags: [ruby on rails, cpanel, hostgator, redmine]
----
++++
+title = "Installing Redmine 1.4 on cPanel Shared Hosting"
+date = 2013-02-26T16:35:00Z
+
+[taxonomies]
+categories = ["code"]
+#tags = ["ruby on rails", "cpanel", "hostgator", "redmine"]
++++
 Redmine 1.4.6 (and earlier) can be installed in a shared environment. This 
 article will detail the easiest and most reliable method of getting a Redmine 
 instance set up on a shared cPanel web hosting account, using `mod_passenger` 

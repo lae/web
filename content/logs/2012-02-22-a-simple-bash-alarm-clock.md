@@ -1,9 +1,10 @@
----
-layout: post
-title: A Simple Bash Alarm Clock
-date: 2012-02-22 17:30
-categories: code
----
++++
+title = "A Simple Bash Alarm Clock"
+date = 2012-02-22T17:30:00Z
+
+[taxonomies]
+categories = ["code"]
++++
 Someone on IRC linked to a script called [DEADLINE][], which got me to thinking, 
 a simple alarm clock script should be easy to concoct in bash if that's what 
 the end goal is. I did a quick Google search but didn't find any *simple* 

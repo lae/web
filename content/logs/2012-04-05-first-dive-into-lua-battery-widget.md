@@ -1,9 +1,10 @@
----
-layout: post
-title: First Dive Into Lua - A Battery Widget
-date: 2012-04-05 09:16
-categories: code desktop
----
++++
+title = "First Dive Into Lua - A Battery Widget"
+date = 2012-04-05T09:16:00Z
+
+[taxonomies]
+categories = ["code", "desktop"]
++++
 So, it's come to the point where my laptop has unexpectedly turned off from 
 a dead battery one too many times, so I decided to write a [battery widget 
 using Vicious][] for the [window manager][] I'm using, [Awesome][]. The 

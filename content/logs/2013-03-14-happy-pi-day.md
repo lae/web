@@ -1,9 +1,10 @@
----
-layout: post
-title: Happy π Day!
-date: 2013-03-14 22:40
-categories: [personal, projects]
----
++++
+title = "Happy π Day!"
+date = 2013-03-14T22:40:00Z
+
+[taxonomies]
+categories = ["personal", "projects"]
++++
 And there you have it.
 
 As a present, here's an illustration of [Japan National Route 20][] from 

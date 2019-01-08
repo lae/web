@@ -1,10 +1,13 @@
----
-layout: post
-title: Restructuring
-date: 2013-01-17 02:33
-updated: 2013-02-15 05:31
-categories: personal
----
++++
+title = "Restructuring"
+date = 2013-01-17T02:33:00Z
+
+[extra]
+updated = 2013-02-15T05:31:00Z
+
+[taxonomies]
+categories = ["personal"]
++++
 Update 2/15:
 
 This site received it's makeover for the most part. I'm going to be 

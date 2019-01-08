@@ -1,9 +1,10 @@
----
-layout: post
-title: Finally set up Jekyll!
-date: 2012-01-23 13:25
-categories: personal
----
++++
+title = "Finally set up Jekyll!"
+date = 2012-01-23T13:25:00Z
+
+[taxonomies]
+categories = ["personal"]
++++
 Tah-dah! This site is now officially powered by [Jekyll][].
 
 I did put this off for a few days, but all the content I had generated up to 
