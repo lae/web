@@ -3,7 +3,7 @@ title = "A Simple Bash Alarm Clock"
 date = 2012-02-22T17:30:00Z
 
 [taxonomies]
-categories = ["code"]
+categories = ["programming"]
 +++
 Someone on IRC linked to a script called [DEADLINE][], which got me to thinking, 
 a simple alarm clock script should be easy to concoct in bash if that's what 

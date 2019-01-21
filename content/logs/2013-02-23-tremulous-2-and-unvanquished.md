@@ -4,7 +4,7 @@ date = 2013-02-23T18:50:00Z
 
 [taxonomies]
 categories = ["personal"]
-#tags = ["tremulous", "gaming"]
+tags = ["tremulous", "gaming"]
 +++
 It looks like the folks over at [AAAGames][] have recently picked up one of my most 
 played games when I was in high school, [Tremulous][]. It's basically a 

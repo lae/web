@@ -3,7 +3,7 @@ title = "First Dive Into Lua - A Battery Widget"
 date = 2012-04-05T09:16:00Z
 
 [taxonomies]
-categories = ["code", "desktop"]
+categories = ["software", "programming"]
 +++
 So, it's come to the point where my laptop has unexpectedly turned off from 
 a dead battery one too many times, so I decided to write a [battery widget 

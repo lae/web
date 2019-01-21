@@ -12,8 +12,8 @@
 {%-   if config.extra.opengraph.author %}
 <meta property="article:author" content="{{ config.extra.opengraph.author | safe }}" />
 {%-   endif %}
-{%-   if data.taxonomies.category -%}
-<meta property="article:section" content="{{ data.taxonomies.category }}" />
+{%-   if data.taxonomies.categories -%}
+<meta property="article:section" content="{{ data.taxonomies.categories.0 }}" />
 {%-   endif %}
 {%-   if data.taxonomies.tags %}
 {%-     for tag in data.taxonomies.tags %}

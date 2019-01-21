@@ -3,7 +3,7 @@ title = "Using SCP to Provide a Public Upload Service"
 date = 2013-02-16T07:54:00Z
 
 [taxonomies]
-categories = ["code"]
+categories = ["programming"]
 +++
 Half a year ago, I wrote a poorly detailed post about setting up 
 [a public upload site using SSH][], which used the `authorized_keys` file 

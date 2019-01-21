@@ -3,7 +3,8 @@ title = "A Practical Behind the Scenes, Running Mastodon at Scale (Translation)"
 date = 2017-04-19T09:40:00Z
 
 [taxonomies]
-categories = ["code"]
+categories = ["infrastructure"]
+tags = ["translation", "aws"]
 +++
 
 *The following is a translation of [this pixiv inside article][].*

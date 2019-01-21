@@ -3,7 +3,8 @@ title = "Notes from Zaif Attack"
 date = 2018-09-20T17:25:00Z
 
 [taxonomies]
-categories = ["code"]
+categories = ["news"]
+tags = ["translation", "cryptocurrency"]
 +++
 
 *The following is primarily a translation of [this blog post][].*

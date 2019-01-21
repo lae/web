@@ -8,7 +8,8 @@ highlight_code = true
 highlight_theme = "charcoal"
 
 taxonomies = [
-    {name = "categories", paginate_by = 5}
+    {name = "categories", paginate_by = 5, rss = true},
+    {name = "tags", paginate_by = 5}
 ]
 
 compile_sass = true
