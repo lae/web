@@ -1,37 +1,24 @@
+{% import "macros.html" as macros -%}
 <!DOCTYPE html>
 <html>
 <head>
-    {% block head %}
-    <title>
-        {%- block title -%}
-        {{ config.title }}
-        {%- if page -%}
-            {%- if page.title -%}
-                ::{{ page.components | slice(end=page.components | length-1) | join(sep="::") }}{% if page.components | length > 1 %}/{% endif %}{{ page.title }}
-            {%- else -%}
-                ::{{ page.components | join(sep="::") }}
-            {%- endif -%}
-        {%- elif section -%}
-            ::{{ section.components | join(sep="::") }}
-        {%- elif taxonomy -%}
-            ::{{ current_path }}
-        {%- endif -%}
-        {%- endblock title -%}
-    </title>
+    {%- block head %}
+    <title>{{ macros::path_title() }}</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/favicon.png" />
-    <link rel="icon" href="/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ config.extra.author }}">
+    {%- if page %}
+    {{ macros::opengraph(type="article", data=page) }}
+    {%- endif %}
+    <link rel="shortcut icon" href="{{ get_url(path="favicon.png") }}" />
+    <link rel="icon" href="{{ get_url(path="favicon.png") }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" />
-    <link rel="stylesheet" href="/site.css" />
+    <link rel="stylesheet" href="{{ get_url(path="site.css") }}" />
     <link rel="stylesheet" href="/mobile.css" media="handheld, only screen and (max-device-width: 800px)" />
-    <meta name="viewport" content="width=800;" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@sleepingkyoto" />
-    <meta name="twitter:creator" content="@sleepingkyoto" />
-    {#<meta name="twitter:title" content="{{ page.title }}" />#}
-    <meta name="twitter:image" content="https://i.imgur.com/UXrHtVR.jpg" />
-    {% endblock head %}
+    <link href="{{ get_url(path="rss.xml") }}" rel="feed" type="application/rss+xml" title="{{ config.title }}" />
+    {%- endblock head %}
 </head>
 <body>
 <section id="string">

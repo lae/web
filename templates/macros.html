@@ -1,0 +1,39 @@
+{% macro opengraph(type, data) -%}
+<meta property="og:type" content="{{ type | default(value="website") }}" />
+<meta property="og:title" content="{% if data.title %}{{ data.title | safe }}{% else %}{{ macros::path_title() }}{% endif %}" />
+<meta property="og:url" content="{{ data.permalink | safe }}" />
+<meta property="og:image" content="{{ data.extra.opengraph.image | default(value=config.extra.opengraph.image | default(value="")) | safe }}" />
+{%- if data.description %}
+<meta property="og:description" content="{{ data.description }}" />
+{%- endif %}
+<meta property="og:site_name" content="{{ config.extra.opengraph.site_name | default(value=config.title) }}" />
+{%- if type == "article" %}
+<meta property="article:published_time" content="{{ data.date | safe }}" />
+{%-   if config.extra.opengraph.author %}
+<meta property="article:author" content="{{ config.extra.opengraph.author | safe }}" />
+{%-   endif %}
+{%-   if data.taxonomies.category -%}
+<meta property="article:section" content="{{ data.taxonomies.category }}" />
+{%-   endif %}
+{%-   if data.taxonomies.tags %}
+{%-     for tag in data.taxonomies.tags %}
+<meta property="article:tag" content="{{ tag }}" />
+{%-     endfor %}
+{%-   endif -%}
+{%- endif %}
+{%- endmacro opengraph %}
+
+{% macro path_title() -%}
+{{ config.title }}
+{%- if page -%}
+    {%- if page.title -%}
+        ::{{ page.components | slice(end=page.components | length-1) | join(sep="::") }}{% if page.components | length > 1 %}/{% endif %}{{ page.title }}
+    {%- else -%}
+        ::{{ page.components | join(sep="::") }}
+    {%- endif -%}
+{%- elif section -%}
+    ::{{ section.components | join(sep="::") }}
+{%- elif taxonomy -%}
+    ::{{ current_path }}
+{%- endif %}
+{%- endmacro title %}
