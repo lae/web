@@ -43,3 +43,6 @@ uri = "contact"
 
 [extra.opengraph]
 image = "https://i.imgur.com/UXrHtVR.jpg"
+
+[extra.twitter]
+creator = "@sleepingkyoto"

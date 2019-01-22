@@ -9,6 +9,10 @@ tags = ["translation", "cryptocurrency"]
 
 [extra.opengraph]
 image = "./zaif-incident.png"
+
+[extra.twitter]
+card = "summary_large_image"
+image_alt = "Diagram of the flow of involved monetary assets."
 +++
 
 *The following is primarily a translation of [this blog post][].*

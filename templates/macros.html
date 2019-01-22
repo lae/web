@@ -47,3 +47,14 @@
     ::{{ current_path }}
 {%- endif %}
 {%- endmacro title %}
+
+{% macro twitter_card(data) -%}
+<meta name="twitter:card" content="{{ data.extra.twitter.card | default(value="summary") }}" />
+{%- for tag in ["site", "creator", "description", "title", "image", "image_alt"] %}
+{%-   if data.extra.twitter[tag] %}
+<meta name="twitter:{{ tag | replace(from="_", to=":") }}" content="{{ data.extra.twitter[tag] }}" />
+{%-   elif config.extra.twitter[tag] %}
+<meta name="twitter:{{ tag | replace(from="_", to=":") }}" content="{{ config.extra.twitter[tag] }}" />
+{%-   endif %}
+{%- endfor %}
+{%- endmacro twitter_card %}
