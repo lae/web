@@ -2,7 +2,17 @@
 <meta property="og:type" content="{{ type | default(value="website") }}" />
 <meta property="og:title" content="{% if data.title %}{{ data.title }}{% else %}{{ macros::path_title() }}{% endif %}" />
 <meta property="og:url" content="{{ data.permalink }}" />
-<meta property="og:image" content="{{ data.extra.opengraph.image | default(value=config.extra.opengraph.image | default(value="")) }}" />
+<meta property="og:image" content="
+{%- if data.extra.opengraph.image %}
+{%-   if data.extra.opengraph.image is starting_with("./") -%}
+{{ data.permalink }}{{ data.extra.opengraph.image | replace(from=".&#x2F;", to="") }}
+{%-   else -%}
+{{ data.extra.opengraph.image }}
+{%-   endif -%}
+{%- else -%}
+{{ config.extra.opengraph.image | default(value="") }}
+{%- endif -%}
+" />
 {%- if data.description %}
 <meta property="og:description" content="{{ data.description }}" />
 {%- endif %}

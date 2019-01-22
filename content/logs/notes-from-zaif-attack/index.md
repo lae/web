@@ -8,7 +8,7 @@ categories = ["news"]
 tags = ["translation", "cryptocurrency"]
 
 [extra.opengraph]
-image = "zaif-incident.png"
+image = "./zaif-incident.png"
 +++
 
 *The following is primarily a translation of [this blog post][].*
