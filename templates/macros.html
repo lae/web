@@ -10,7 +10,7 @@
 {{ data.extra.opengraph.image }}
 {%-   endif -%}
 {%- else -%}
-{{ config.extra.opengraph.image | default(value="") }}
+{{ config.extra.opengraph.image | default(value="https://spaceholder.cc/1024x512") }}
 {%- endif -%}
 " />
 {%- if data.description %}
