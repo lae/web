@@ -1,18 +1,18 @@
 {% macro opengraph(type, data) -%}
 <meta property="og:type" content="{{ type | default(value="website") }}" />
-<meta property="og:title" content="{% if data.title %}{{ data.title | safe }}{% else %}{{ macros::path_title() }}{% endif %}" />
-<meta property="og:url" content="{{ data.permalink | safe }}" />
-<meta property="og:image" content="{{ data.extra.opengraph.image | default(value=config.extra.opengraph.image | default(value="")) | safe }}" />
+<meta property="og:title" content="{% if data.title %}{{ data.title }}{% else %}{{ macros::path_title() }}{% endif %}" />
+<meta property="og:url" content="{{ data.permalink }}" />
+<meta property="og:image" content="{{ data.extra.opengraph.image | default(value=config.extra.opengraph.image | default(value="")) }}" />
 {%- if data.description %}
 <meta property="og:description" content="{{ data.description }}" />
 {%- endif %}
 <meta property="og:site_name" content="{{ config.extra.opengraph.site_name | default(value=config.title) }}" />
 {%- if type == "article" %}
-<meta property="article:published_time" content="{{ data.date | safe }}" />
+<meta property="article:published_time" content="{{ data.date }}" />
 {%-   if config.extra.opengraph.author %}
-<meta property="article:author" content="{{ config.extra.opengraph.author | safe }}" />
+<meta property="article:author" content="{{ config.extra.opengraph.author }}" />
 {%-   endif %}
-{%-   if data.taxonomies.categories -%}
+{%-   if data.taxonomies.categories %}
 <meta property="article:section" content="{{ data.taxonomies.categories.0 }}" />
 {%-   endif %}
 {%-   if data.taxonomies.tags %}
