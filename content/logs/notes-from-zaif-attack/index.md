@@ -1,10 +1,14 @@
 +++
 title = "Notes from Zaif Attack"
+description = "A translation of an article regarding the late 2018 breach into the Zaif cryptocurrency exchange."
 date = 2018-09-20T17:25:00Z
 
 [taxonomies]
 categories = ["news"]
 tags = ["translation", "cryptocurrency"]
+
+[extra.opengraph]
+image = "zaif-incident.png"
 +++
 
 *The following is primarily a translation of [this blog post][].*
