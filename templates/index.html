@@ -4,11 +4,21 @@
     <title>{{ config.title }}</title>
     <meta charset="utf-8" />
     <style type="text/css">
-@import url(https://fonts.googleapis.com/css?family=Cardo);
+/* signika-regular - latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'),
+       url('../fonts/signika-v9-latin-regular.woff2') format('woff2'),
+       url('../fonts/signika-v9-latin-regular.woff') format('woff');
+}
 * { margin: 0; padding: 0; text-align: center; }
-body { font-family: Cardo, serif; background: #171717; color: #dfdfdf; }
+body {
+  font-family: Signika, sans-serif; background: #608060; color: #dfdfdf;
+}
 header, nav { width: 100%; position: absolute; }
-header { bottom: 70%; background: #efefef; color: #171717; padding: 2em 0 0; }
+header { bottom: 70%; background: #e0f0f0; color: #2060a0; padding: 2em 0 0; }
 header p { font-size: 3em; }
 nav { top: 35%; }
 li { list-style: none; line-height: 3em; }
