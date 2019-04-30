@@ -29,7 +29,7 @@ knows what the theme is based on?
 
 Japan isn't happening this year. Japan's Immigration Bureau sent me a rejection
 letter on the 18th of April on the basis - stating pretty much what I expected
-- of my lack of a degree and experience. So, I'm falling back to my original
+\- of my lack of a degree and experience. So, I'm falling back to my original
 plan from when I quit my job last year, of going to community college in
 preparation for a UC Berkeley transfer, albeit set back a year now. I'm still
 considering some other options, though.
