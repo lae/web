@@ -1,162 +1,218 @@
+/* signika-regular - latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'),
+       url('../fonts/signika-v9-latin-regular.woff2') format('woff2'),
+       url('../fonts/signika-v9-latin-regular.woff') format('woff');
+}
+
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
+       url('../fonts/noto-sans-jp-v23-japanese_latin-regular.woff2') format('woff2'),
+       url('../fonts/noto-sans-jp-v23-japanese_latin-regular.woff') format('woff');
+}
+
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'),
+       url('../fonts/noto-sans-jp-v23-japanese_latin-700.woff2') format('woff2'),
+       url('../fonts/noto-sans-jp-v23-japanese_latin-700.woff') format('woff');
+}
+
+/* source-code-pro-regular - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'),
+       url('../fonts/source-code-pro-v9-latin-regular.woff2') format('woff2'),
+       url('../fonts/source-code-pro-v9-latin-regular.woff') format('woff');
+}
+
 * { margin: 0; padding: 0; }
-body { font-family: "Roboto Slab", "MS Mincho", IPAMincho, serif; }
-a { color: #cf1f1f; text-decoration: none; }
-a:hover { text-decoration: underline; background: rgba(0,0,0,0.07); }
+
+body {
+    background: linear-gradient(180deg, #2080a0, #2080a0 10%, #e0f0f0 10%, #e0f0f0 12.5%, #2080a0 12.5%, #2080a0 22.5%, #e0f0f0 22.5%, #e0f0f0 25%, #a0c080 25%, #a0c080 30%, #e0f0f0 30%, #e0f0f0 35%, #a0c080 35%, #a0c080 45%, #708060 45%, #708060 70%, #b0c090 70%, #b0c090 90%, #708060 90%);
+    background-attachment: fixed;
+    font-family: "Noto Sans JP", "Noto Sans", "Open Sans", sans-serif;
+}
+
 p { text-align: justify; }
+a {
+    color: #305070;
+}
+code, pre { font-family: "Source Code Pro", monospace; }
+//code.text { line-height: 20px; }
+//code:not(.text) { background-color: #f8dee1; padding: 2px; font-size: inherit; }
 
-/* drop-down css3 menu */
-#string {
-	width: 100%;
-	background: #ffdfcf url("/images/hisaxmas.png") right top no-repeat;
-	position: absolute;
-	z-index: 10;
-}
-#door {
-	height: 1.6em;
-	background: #373737;
-	color: #dfdfdf;
-}
-#door label {
-	font-family: "Open Sans", sans-serif;
-	padding: 0.2em 0;
-	font-size: 0.8em;
-	font-weight: 700;
-	letter-spacing: 0.3em;
-	text-indent: 1em;
-	display: block;
-	cursor: pointer;
-}
-#door span { padding-right: 0.5em; }
-#knob { display: none; }
-#knob ~ section {
-	height: 0;
-	overflow: hidden;
-	transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
-	-webkit-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
-	-moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
-	-o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
-}
-#knob:checked ~ section { height: 170px; }
-#knob ~ #door em:first-child { display: inline; }
-#knob ~ #door em:last-child { display: none; }
-#knob:checked ~ #door em:first-child { display: none; }
-#knob:checked ~ #door em:last-child { display: inline; }
-#closet { width: 100%; display: table; padding: 0 0 0 1%; }
-#closet > nav { display: table-cell; padding: 0 1% 0 0; }
-#closet > *:last-child { width: 180px; }
-#closet > *:first-child { padding-right: 1em; min-width: 400px; }
-.gravatar { float: left; margin: 0.7em 1em 0.3em 0; }
-.links { width: 25%; }
-.links h2 { letter-spacing: 0.05em; padding-bottom: 0.15em; }
-.links li {
-	display: inline-block;
-	padding-top: 0.1em;
-	width: 49%;
-	list-style: none;
-	font-size: 1.1em;
-}
-.links li a {
-	color: inherit;
-	padding: 0 0.25em 0.1em;
-	display: block;
-}
-.links li a:hover {
-	background: #373737;
-	color: #dfdfdf;
-	text-decoration: none;
+header.closet, header.door, main {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 960px;
 }
 
-/* main content body */
-#twine {
-	position: absolute;
-	top: 2.3em; /* 1.6em without the "for-hire" bar */
-	bottom: 1.6em;
-	overflow: auto;
-	width: 100%;
+header.closet {
+    background: #f0a060;
+    font-family: "Signika";
+    nav {
+        margin: 0.5rem auto;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.5em;
+        flex: 1 2 auto;
+        ul {
+            line-height: 1;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                list-style-type: none;
+                display: flex;
+                flex: auto;
+            }
+            a {
+                color: #305070;
+                text-decoration: none;
+                margin: auto;
+            }
+            a:before {
+                display: inline-block;
+                width: 1em;
+                padding-right: 0.2em;
+                vertical-align: text-bottom;
+            }
+        }
+        .github:before { content: url(/icons/github.svg); }
+        .logs:before { content: url(/icons/file-text.svg); }
+        .about:before { content: url(/icons/smile.svg); }
+        .resume:before { content: url(/icons/user.svg); }
+        .tags:before { content: url(/icons/tag.svg); }
+    }
 }
+
+header.door {
+    position: sticky;
+    top: 0;
+    padding: 0.2em 0;
+    background: #305070;
+
+    a {
+        color: #e7e0d0;
+        font-size: 1.25em;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:first-child {
+        flex: 1 0 auto;
+        letter-spacing: 0.2em;
+    }
+
+    a[href="#top"] {
+        flex: 0 0 2em;
+    }
+}
+
+main {
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 0.5em 0.2em 2em;
+    overflow: auto;
+    flex-direction: column;
+    display: flex;
+
+    section.post {
+        width: 95%;
+        margin: 1em auto;
+        p { margin: 1em 0; }
+        aside:first-child {
+            font-family: "Signika", sans-serif;
+            text-align: center;
+            color: #606060;
+        }
+        header h1 {
+            font-family: "Signika", sans-serif;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        article {
+            ul { padding-left: 4em; }
+            p { text-indent: 2em; }
+        }
+    }
+}
+
 .entry, .archive {
-	width: 90%;
-	margin: 1em auto 2.5em;
-	background: #efefef;
-	border: 1px solid #3f3f3f;
-	border-radius: 0 0 1em 1em;
-	box-shadow: 12px 12px 18px -6px #9f9f9f;
+    width: 90%;
+    margin: auto auto 1em;
+    background: #efefef;
+    border: 1px solid #3f3f3f;
 }
-.entry header h2, .archive header h2 { font-size: 1.3em; background: #373737; }
+.entry header h2, .archive header h2 { font-size: 1.3em; background: #305070; }
 .entry header h2 a {
-	color: #dfdfdf;
-	padding: .1em 2em;
-	display: block;
+    color: #dfdfdf;
+    padding: .1em 2em;
+    display: block;
 }
-.entry header h2 a:hover { background: #7f0f0f; text-decoration: none; }
+.entry header h2 a:hover { background: #608060;; text-decoration: none; }
 .entry article { padding: 0.3em 1.3em; font-size: 1em; }
 .entry article p {
-	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
-	text-indent: 2em;
-	margin: 0.4em 0;
+    text-indent: 2em;
+    margin: 0.4em 0;
 }
 .entry article img, .post article img { margin: auto; display: block; max-width: 100%; }
 .entry article ul { padding-left: 2em; }
-.entry article li {
-	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
-}
 .entry .metadata {
-	display: table;
-	width: 100%;
-	background: #373737;
-	color: #dfdfdf;
-	border-radius: 0 0 1em 1em;
+    display: table;
+    width: 100%;
+    background: #373737;
+    color: #dfdfdf;
 }
 .entry .metadata span { display: table-cell; padding: 0.1em 1.5em;}
 .entry .metadata span:last-child { text-align: right; }
 .entry .metadata a { color: #afafaf; }
-.post {
-	width: 90%;
-	max-width: 1200px;
-	margin: 1em auto;
-}
-.post aside:first-child { text-align: center; color: #878787; }
-.post header h1 { text-align: center; font-size: 2em; margin-bottom: 0.3em; }
-.post article {
-	font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif;
-	margin-left: 10%;
-}
-.post article ul { padding-left: 4em; }
-.post article p { margin: 1em 0; text-indent: 2em; }
-.post aside:last-child { margin: 3em 0 0 10%; }
-.post aside:last-child img { vertical-align: text-top; }
 .archive header h2 { color: #dfdfdf; padding: .1em 2em; display: block; }
 .archive nav { padding: 1em; }
 .archive li { list-style: none; }
-.archive a { font-family: "Open Sans", "MS Gothic", IPA Gothic, sans-serif; }
 div.highlight {
-	background: #f6c7cf url("/images/codestripes.png") repeat scroll 0 -12px;
-	overflow: auto;
-	margin: 1em 0;
-	padding: 8px 1em; 
-	border: 1px solid #3f3f3f;
-	border-left-width: 6px;
-	border-radius: 4px 0 0 4px;
+    //background: #f6c7cf url("/images/codestripes.png") repeat scroll 0 -12px;
+    overflow: auto;
+    margin: 1em 0;
+    padding: 8px 1em; 
+    border: 1px solid #3f3f3f;
+    border-left-width: 6px;
+    border-radius: 4px 0 0 4px;
 }
-code.text { line-height: 20px; }
-code:not(.text) { background-color: #f8dee1; padding: 2px; font-size: inherit; }
 
 /* footer bar */
 #thimble {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 1.6em;
-	background: #373737;
-	color: #dfdfdf;
-	font-family: "Open Sans", sans-serif;
-	display: table;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.6em;
+    background: #373737;
+    color: #dfdfdf;
+    font-family: "Open Sans", sans-serif;
+    display: table;
     table-layout: fixed;
 }
 #thimble span { display: table-cell; padding: 0 1em; }
 #thimble span:last-child { text-align: right; }
 #thimble a { font-size: 0.9em; color: inherit; }
 
+/*
+supposedly alternating background lines on tables
 table {
   padding: 0; }
   table tr {
@@ -182,4 +238,4 @@ table {
     table tr th :last-child, table tr td :last-child {
       margin-bottom: 0; }
 
-
+*/

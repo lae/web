@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block head %}
+{{ macros::twitter_card(data=page) }}
+{{ macros::opengraph(type="article", data=page) }}
+{% endblock head %}
+
 {% block content %}
 <section class="post">
     <aside>{ {{ page.date | date(format="%d %B %Y") }} }</aside>
