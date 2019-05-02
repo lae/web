@@ -8,4 +8,4 @@ categories = ["rant"]
 +++
 
 **No, she doesn't speak English, and yes, there are (probably) other English
-speakers in the chat who are not there to chitchat with you. Stop asking.**
+speakers in the chat, but they're not there to chat with you. Stop asking.**
