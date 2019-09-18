@@ -16,14 +16,14 @@ release on 27 November. It'll be available on streaming services on 26 October.
 The CD will be 5000 JPY before tax, and the digital album will be 2200 JPY.
 The album features 8 VTubers (different from vol.1):
 
-Pinky Pop Hepburn ([@PinkyPopHepburn](https://twitter.com/PinkyPopHepburn)) - 「ここにいるぜぇ！」 (Koko ni Iruze!)  
-Kyo Hanabasami ([@Kyo_Hanabasami](https://twitter.com/Kyo_Hanabasami/)) - 「雪の華」 (Yuki no Hana)  
-Leona Shishigami ([@LeonaShishigami](https://twitter.com/LeonaShishigami)) - 「There will be love there-愛のある場所-」 (There will be love there-Ai no aru Basho-)  
-AZKi ([@AZKi_VDiVA](https://twitter.com/AZKi_VDiVA)) - 「fragile」  
-Era Otogibara ([@OtogibaraEra](https://twitter.com/OtogibaraEra)) - 「♡桃色片想い♡」 (♡Momoiro Kataomoi♡)  
-Meiji Warabeda ([@warabeda_meiji](https://twitter.com/warabeda_meiji)) - 「ハナミズキ」 (Hanamizuki)  
-Else and Same no Poki ([@Else_PJblue](https://twitter.com/Else_PJblue) & [@samenopoki](https://twitter.com/samenopoki)) - 「Rolling star」  
-Toko Inui ([@inui_toko](https://twitter.com/inui_toko)) - 「気まぐれロマンティック」 (Kimagure Romantic)
+> Pinky Pop Hepburn ([@PinkyPopHepburn](https://twitter.com/PinkyPopHepburn)) - 「ここにいるぜぇ！」 (Koko ni Iruze!)  
+> Kyo Hanabasami ([@Kyo_Hanabasami](https://twitter.com/Kyo_Hanabasami/)) - 「雪の華」 (Yuki no Hana)  
+> Leona Shishigami ([@LeonaShishigami](https://twitter.com/LeonaShishigami)) - 「There will be love there-愛のある場所-」  
+> AZKi ([@AZKi_VDiVA](https://twitter.com/AZKi_VDiVA)) - 「fragile」  
+> Era Otogibara ([@OtogibaraEra](https://twitter.com/OtogibaraEra)) - 「♡桃色片想い♡」 (♡Momoiro Kataomoi♡)  
+> Meiji Warabeda ([@warabeda_meiji](https://twitter.com/warabeda_meiji)) - 「ハナミズキ」 (Hanamizuki)  
+> Else and Same no Poki ([@Else_PJblue](https://twitter.com/Else_PJblue) & [@samenopoki](https://twitter.com/samenopoki)) - 「Rolling star」  
+> Toko Inui ([@inui_toko](https://twitter.com/inui_toko)) - 「気まぐれロマンティック」 (Kimagure Romantic)
 
 An additional 4 tracks featuring duets is also being produced, and the CD
 version will include an additional song featuring all members (similar to what
