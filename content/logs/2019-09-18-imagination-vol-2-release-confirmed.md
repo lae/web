@@ -13,8 +13,9 @@ IMAGINATION's getting another release! This is a brief summary of the
 
 Preorders go up at 10am JST on 19 September (tomorrow) for the physical CD
 release on 27 November. It'll be available on streaming services on 26 October.
-The CD will be 5000 JPY before tax, and the digital album will be 2200 JPY.
-The album features 8 VTubers (different from vol.1):
+The CD will be 5000 JPY before tax and will come with a set of 8 pin buttons
+(one for each VTuber), and the digital album will be 2200 JPY.  The album
+features 8 VTubers (different from vol.1):
 
 > Pinky Pop Hepburn ([@PinkyPopHepburn](https://twitter.com/PinkyPopHepburn)) - 「ここにいるぜぇ！」 (Koko ni Iruze!)  
 > Kyo Hanabasami ([@Kyo_Hanabasami](https://twitter.com/Kyo_Hanabasami/)) - 「雪の華」 (Yuki no Hana)  
