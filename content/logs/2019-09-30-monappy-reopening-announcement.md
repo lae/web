@@ -90,7 +90,7 @@ more anomaly detection. also, I'm tired.)
 ## Future Changes
 
 In accordance with amendments to the Payment Services Act to go into effect in
-April 2014, we intend to remove the service's dependency on a hot wallet. We're
+April 2020, we intend to remove the service's dependency on a hot wallet. We're
 also looking to developing integrations between Monappy and dApps, so that users
 can eventually have full control over their private keys.
 
