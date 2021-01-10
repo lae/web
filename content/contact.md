@@ -7,7 +7,8 @@ ul.c { padding: 0!important; list-style-type: none; }
 .c li img { vertical-align: text-top; }
 .post img { display: inline!important; }
 </style>
-<!--p><img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png?size=128" alt="lae's gravatar" class="gravatar" /-->
+<p>
+<!--img src="http://www.gravatar.com/avatar/53ee1c392cbbff2e6ec8bf54bb457e82.png?size=128" alt="lae's gravatar" class="gravatar" /-->
 You can contact me through the following venues (ORDER BY preference DESC):</p>
 
 <ul class="c">
