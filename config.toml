@@ -1,45 +1,44 @@
 base_url = "https://lae.is"
-
 title = "milk tea fuzz"
 description = "lae's journal"
 default_language = "en"
-
-highlight_code = true
-highlight_theme = "charcoal"
-
+languages = [
+    {code = "ja", search = true }
+]
 taxonomies = [
-    {name = "categories", paginate_by = 5, rss = true},
+    {name = "categories", paginate_by = 5, feed = true},
+    {name = "categories", paginate_by = 5, feed = true, lang = "ja"},
     {name = "tags", paginate_by = 5}
 ]
 
 compile_sass = true
+minify_html = true
 
-build_search_index = false
-check_external_links = false
-
-ignored_content = []
-extra_syntaxes = []
+[markdown]
+highlight_code = true
+highlight_theme = "charcoal"
 
 [translations]
+[translations.en]
+logs = "Logs"
+about = "Contact"
+resume = "Resume"
+tags = "Tags"
+
+[translations.ja]
+logs = "チラシ"
+about = "連絡先"
+resume = "履歴書"
+tags = "タグ"
 
 [extra]
 author = "Musee Ullah"
-
-[[extra.homelinks]]
-title = "resume"
-uri = "resume"
-
-[[extra.homelinks]]
-title = "journal"
-uri = "logs"
-
-[[extra.homelinks]]
-title = "git"
-uri = "https://github.com/lae"
-
-[[extra.homelinks]]
-title = "contact"
-uri = "contact"
+homelinks = [
+    {title = "resume", uri = "resume" },
+    {title = "journal", uri = "logs" },
+    {title = "git", uri = "https://github.com/lae"},
+    {title = "contact", uri = "contact" }
+]
 
 [extra.opengraph]
 image = "https://i.imgur.com/UXrHtVR.jpg"

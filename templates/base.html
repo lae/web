@@ -15,11 +15,11 @@
 <header class="closet" id="top">
     <nav>
       <ul>
-        <li><a class="logs" href="/logs">Logs</a></li>
-        <li><a class="about" href="/contact">Contact</a></li>
+        <li><a class="logs" href="{{ get_url(path = '@/logs/_index.md', lang = lang) }}">{{ trans(key = "logs", lang = lang) }}</a></li>
+        <li><a class="about" href="{{ get_url(path = '@/contact.md', lang = lang) }}">{{ trans(key = "about", lang = lang) }}</a></li>
         <li><a class="github" href="https://github.com/lae">Github</a></li>
-        <li><a class="resume" href="/resume">Resume</a></li>
-        <li><a class="tags" href="/tags/">Tags</a></li>
+        <li><a class="resume" href="{{ get_url(path = '@/resume.md', lang = lang) }}">{{ trans(key = "resume", lang = lang) }}</a></li>
+        <li><a class="tags" href="/tags/">{{ trans(key = "tags", lang = lang) }}</a></li>
       </ul>
     </nav>
 </header>

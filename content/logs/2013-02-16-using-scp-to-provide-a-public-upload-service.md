@@ -125,6 +125,6 @@ sender's IP, so one should be able to track uploads via IP within the script
 easily. I'll see what I can do about the other issue.
 
 
-[a public upload site using SSH]: ./logs/2012-06-25-kyoto.maidlab.jp.md
+[a public upload site using SSH]: @/logs/2012-06-25-kyoto_maidlab_jp.md
 [data store]: http://redis.io
 [SSH\_CONNECTION and SSH\_CLIENT]: http://en.wikibooks.org/wiki/OpenSSH/Client_Applications#ssh_client_environment_variables

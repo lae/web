@@ -33,8 +33,8 @@ Seeing how pretty I made kyoto.maidlab.jp I'm a bit inspired to redesign this
 site, so I might do that sometime soon. For now though, time to sleep. Possibly.
 
 [Michael Lustfield's]: http://michael.lustfield.net
-[Irssi to SMS]: http://michael.lustfield.net/content/irssi-sms
-[my previous post]: ./logs/2012-06-25-kyoto.maidlab.jp.md
+[Irssi to SMS]: http://web.archive.org/web/20150522061505/https://michael.lustfield.net/linux/irssi-to-sms
+[my previous post]: @/logs/2012-06-25-kyoto_maidlab_jp.md
 [afraid.org's]: http://freedns.afraid.org
 [NearlyFreeSpeech]: http://nearlyfreespeech.net
 [survival minecraft server]: http://forums.knightsofreason.net/viewtopic.php?f=140&t=7634

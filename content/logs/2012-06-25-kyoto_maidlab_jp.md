@@ -17,7 +17,7 @@ more than that, but thanks for visiting.
 his domain on afraid.org. No, I don't know the reason behind it. That said, 
 these links are mostly broken.
 
-So, over this weekend I've set up [kyoto.maidlab.jp][] to point to this 
+So, over this weekend I've set up kyoto.maidlab.jp to point to this 
 server. I'm going to start using this virtual host for my own projects, I 
 suppose. Right now, I've made a pretty front page in just a matter of 
 minutes, and just today I've set up some form of a public upload site using 
@@ -50,5 +50,4 @@ the public. I wrote [an article that goes into detail about public scp][].
 As a result, the above script and associated private key are no longer available 
 for download.
 
-[an article that goes into detail about public scp]: ./logs/2013-02-16-using-scp-to-provide-a-public-upload-service.md
-[kyoto.maidlab.jp]: http://kyoto.maidlab.jp
+[an article that goes into detail about public scp]: @/logs/2013-02-16-using-scp-to-provide-a-public-upload-service.md
