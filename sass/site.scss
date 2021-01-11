@@ -1,42 +1,5 @@
-/* signika-regular - latin */
-@font-face {
-  font-family: 'Signika';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Signika Regular'), local('Signika-Regular'),
-       url('../fonts/signika-v9-latin-regular.woff2') format('woff2'),
-       url('../fonts/signika-v9-latin-regular.woff') format('woff');
-}
-
-/* noto-sans-jp-regular - japanese_latin */
-@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('../fonts/noto-sans-jp-v23-japanese_latin-regular.woff2') format('woff2'),
-       url('../fonts/noto-sans-jp-v23-japanese_latin-regular.woff') format('woff');
-}
-
-/* noto-sans-jp-700 - japanese_latin */
-@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'),
-       url('../fonts/noto-sans-jp-v23-japanese_latin-700.woff2') format('woff2'),
-       url('../fonts/noto-sans-jp-v23-japanese_latin-700.woff') format('woff');
-}
-
-/* source-code-pro-regular - latin */
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Code Pro'), local('SourceCodePro-Regular'),
-       url('../fonts/source-code-pro-v9-latin-regular.woff2') format('woff2'),
-       url('../fonts/source-code-pro-v9-latin-regular.woff') format('woff');
-}
+$font-directory: "../fonts/";
+@import 'fonts';
 
 * { margin: 0; padding: 0; }
 
